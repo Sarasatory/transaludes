@@ -59,7 +59,7 @@ const Nav = (props) => {
     <section className='section-nav'>
       <div className='max-container'>
         <div className={`nav-mobile ${props.visibility}`}>
-          <ul className='nav-inicio'>
+          <ul className='nav-mobile__logo'>
             <li
               id='0'
               onClick={handleClick}
@@ -71,7 +71,7 @@ const Nav = (props) => {
           </ul>
 
           <div
-            className={`icon-bars ${props.visibility}`}
+            className={`nav-mobile__icon-bars ${props.visibility}`}
             onClick={props.changeVisibilityBtn}
           ></div>
         </div>
@@ -81,10 +81,10 @@ const Nav = (props) => {
           onLoad={handleClick}
         >
           <div
-            className={`icon-close`}
+            className='nav__icon-close'
             onClick={props.changeVisibilityNav}
           ></div>
-          <ul>
+          <ul className='nav__logo-rectangle'>
             <li
               id='0'
               onClick={handleClick}
@@ -94,7 +94,7 @@ const Nav = (props) => {
               </Link>
             </li>
           </ul>
-          <ul>
+          <ul className='nav__menu'>
             <li
               id='0'
               className={props.statusMenu001}

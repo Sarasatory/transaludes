@@ -2,21 +2,159 @@
 // TEXTOS
 //
 
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600&family=Urbanist:wght@400;500;600&display=swap');
+
 .text-h1 {
+  text-align: left;
+  font-family: $font-family-urbanist;
+  font-weight: $font-w-medium;
+
+  font-size: 40rem;
+  letter-spacing: 0;
   @media (min-width: $break_point_tablet) {
   }
   @media (min-width: $break_point_desktop) {
   }
 }
 
-.text-p {
+.text-h2 {
+  text-align: left;
+  font-family: $font-family-urbanist;
+  font-weight: $font-w-medium;
+
+  font-size: 30rem;
+  letter-spacing: 0;
   @media (min-width: $break_point_tablet) {
   }
   @media (min-width: $break_point_desktop) {
   }
 }
 
-.text-span {
+.text-h3-medium {
+  text-align: left;
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-medium;
+
+  font-size: 26rem;
+  letter-spacing: 0;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-h3-regular {
+  text-align: left;
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-regular;
+
+  font-size: 26rem;
+  letter-spacing: 0;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-h4-medium {
+  text-align: left;
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-medium;
+
+  font-size: 20rem;
+  letter-spacing: 0;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-h4-regular {
+  text-align: left;
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-regular;
+
+  font-size: 20rem;
+  letter-spacing: 0;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-p1-medium {
+  text-align: left;
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-medium;
+
+  font-size: 18rem;
+  letter-spacing: 0;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-p1-regular {
+  text-align: left;
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-regular;
+
+  font-size: 18rem;
+  letter-spacing: 0;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-p2 {
+  text-align: left;
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-regular;
+
+  font-size: 17rem;
+  letter-spacing: 0;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-p3 {
+  text-align: left;
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-regular;
+
+  font-size: 13rem;
+  letter-spacing: 0;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-btn {
+  text-align: left;
+  font-family: $font-family-urbanist;
+  font-weight: $font-w-bold;
+
+  font-size: 16rem;
+  letter-spacing: 0;
+  @media (min-width: $break_point_tablet) {
+  }
+  @media (min-width: $break_point_desktop) {
+  }
+}
+
+.text-label {
+  text-align: left;
+  font-family: $font-family-red-hat-display;
+  font-weight: $font-w-semibold;
+
+  font-size: 14rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
   @media (min-width: $break_point_tablet) {
   }
   @media (min-width: $break_point_desktop) {

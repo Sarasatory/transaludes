@@ -1,9 +1,9 @@
+@import '../core/Variables.scss';
+
 .logo-rectangle {
   width: 180rem;
   height: 54rem;
 
-  background-image: url(../../assets/images/logo-rectangle.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background: url(../../assets/images/logo-rectangle.svg) no-repeat center
+    center / cover;
 }
