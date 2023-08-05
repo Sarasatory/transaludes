@@ -1,0 +1,48 @@
+// Saltos de línea con "\n" en el texto del objeto JSON.
+.white-space-jump {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+}
+
+// Clase "hidden".
+.d-hidden {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-block {
+  display: block;
+}
+//
+// CONTENEDORES
+//
+.max-container {
+  position: relative;
+
+  width: 100%;
+  // max-width: $max-width-mobile;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: solid 1rem red;
+
+  @media (min-width: $break-point-tablet) {
+    max-width: $max-width-tablet;
+    padding: 0rem 40rem;
+  }
+
+  @media (min-width: $break-point-desktop) {
+    max-width: $max-width-desktop;
+    padding: 0rem 80rem;
+  }
+}

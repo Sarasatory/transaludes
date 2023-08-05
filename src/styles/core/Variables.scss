@@ -1,0 +1,24 @@
+// FONTS
+// $font-w-light: 300;
+// $font-w-regular: 400;
+// $font-w-medium: 500;
+
+// COLORS
+$col-white: #fff; // White
+$col-white-30: rgba(255, 255, 255, 0.3); // White 30%
+$col-white-50: rgba(255, 255, 255, 0.5); // White 50%
+$col-white-70: rgba(255, 255, 255, 0.7); // White 70%
+$col-black: #000; // Black
+// $col-orange-light: #ffa24b; // Orange Light
+
+// SIZES
+$break-point-tablet: 800px;
+$break-point-desktop: 1100px;
+
+$max-width-mobile: 390px;
+$max-width-tablet: 768px;
+$max-width-desktop: 1200px;
+
+$width-mobile: 100%;
+$width-tablet: calc(100% - 80rem);
+$width-desktop: calc(100% - 240rem);
