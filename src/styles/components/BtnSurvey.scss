@@ -1,0 +1,17 @@
+@import '../core/Variables.scss';
+.btn-survey {
+  width: 256rem;
+  height: 56rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $col-white;
+  background: $gradient-action-pink;
+  border-radius: 28rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

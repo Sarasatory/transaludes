@@ -10,8 +10,8 @@
   justify-content: center;
   align-items: center;
 
-  background-color: $col-white-70;
-  backdrop-filter: blur(5rem);
+  background-color: $col-white-90;
+  backdrop-filter: blur(10rem);
 }
 
 .nav-mobile {
@@ -24,7 +24,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: $break-point-tablet) {
+  @media (min-width: $break-point-desktop) {
     display: none;
   }
 
@@ -56,7 +56,6 @@
 
 .nav {
   z-index: 200;
-  position: relative;
 
   width: 100%;
   height: 100vh;
@@ -67,9 +66,7 @@
   justify-content: flex-start;
   align-items: center;
 
-  border: 3rem solid greenyellow;
-
-  @media (min-width: $break-point-tablet) {
+  @media (min-width: $break-point-desktop) {
     height: $nav-height-tablet-desktop;
     min-height: $nav-height-tablet-desktop;
     padding: 0 24rem;
@@ -95,36 +92,45 @@
       cursor: pointer;
     }
 
-    @media (min-width: $break-point-tablet) {
+    @media (min-width: $break-point-desktop) {
       display: none;
     }
   }
 
   &__logo-rectangle {
+    margin: 100rem 0 60rem 0;
+
+    @media (min-width: $break-point-desktop) {
+      margin: 0;
+    }
   }
 
-  &__nav-menu {
-    @media (min-width: $break-point-tablet) {
+  &__menu {
+    width: 100%;
+    margin-bottom: 80rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32rem;
+
+    @media (min-width: $break-point-desktop) {
+      margin-bottom: 0;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 22rem;
     }
 
     @media (min-width: $break-point-desktop) {
     }
 
-    & li {
-      color: $col-black;
-
-      font-size: 18rem;
-      line-height: 40rem;
-
-      &:hover {
-        color: $col-black;
-      }
+    & li:hover {
+      color: $col-main-blue;
     }
   }
 
   &.closed {
-    right: -105vw;
-
     display: none;
 
     animation-name: closed-nav;
@@ -134,7 +140,7 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
-    @media (min-width: $break-point-tablet) {
+    @media (min-width: $break-point-desktop) {
       display: flex;
 
       animation: none;
@@ -143,20 +149,18 @@
 
   @keyframes closed-nav {
     0% {
-      right: 0;
       opacity: 100;
       display: flex;
     }
 
     100% {
-      right: -105vw;
       opacity: 0;
       display: none;
     }
   }
 
   &.open {
-    right: 0;
+    display: flex;
 
     animation-name: open-nav;
     animation-duration: 0.35s;
@@ -165,51 +169,44 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
-    @media (min-width: $break-point-tablet) {
+    @media (min-width: $break-point-desktop) {
       animation: none;
     }
   }
 
   @keyframes open-nav {
     0% {
-      right: -105vw;
       opacity: 0;
       display: none;
     }
 
     100% {
-      right: 0;
       opacity: 100;
       display: flex;
     }
   }
-}
 
-.selected {
-  padding: 0 5rem;
-  color: $col-black;
-  font-size: 20rem;
-  line-height: 40rem;
+  .selected {
+    padding: 0 5rem 18rem 5rem;
 
-  background-image: linear-gradient(120deg, $col-black 0%, $col-black 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 2rem;
-  background-position: center 90%;
+    color: $col-main-blue;
+    font-weight: $font-w-medium;
 
-  @media (min-width: $break-point-tablet) {
-    padding: 0 10rem 2rem 10rem;
+    background: $gradient-action-blue;
+    background-repeat: no-repeat;
+    background-size: 100% 3rem;
+    background-position: center 90%;
 
-    background-position: center 94%;
+    @media (min-width: $break-point-desktop) {
+      padding: 18rem 5rem;
+    }
   }
-}
 
-.no-selected {
-  padding: 0 5rem;
-  color: $col-black;
-  font-size: 20rem;
-  line-height: 40rem;
+  .no-selected {
+    padding: 0 5rem;
 
-  @media (min-width: $break-point-tablet) {
-    padding: 0 10rem 2rem 10rem;
+    @media (min-width: $break-point-desktop) {
+      padding: 18rem 5rem;
+    }
   }
 }

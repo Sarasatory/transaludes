@@ -2,7 +2,7 @@
 import '../styles/components/Nav.scss';
 
 import LogoRectangle from './LogoRectangle';
-import LogoSquare from './LogoSquare';
+import BtnSurvey from './BtnSurvey';
 
 import {Link} from 'react-router-dom';
 import {useState, useEffect} from 'react';
@@ -97,33 +97,34 @@ const Nav = (props) => {
           <ul className='nav__menu'>
             <li
               id='0'
-              className={props.statusMenu001}
+              className={`text-p1-regular ${props.statusMenu001}`}
               onClick={handleClick}
             >
-              <Link to='/'>Menu 1</Link>
+              <Link to='/'>Estudio Transaludes</Link>
             </li>
             <li
               id='1'
-              className={props.statusMenu002}
+              className={`text-p1-regular ${props.statusMenu002}`}
               onClick={handleClick}
             >
-              <Link to='/Page1'>Menu 2</Link>
+              <Link to='/Page1'>Equipo</Link>
             </li>
             <li
               id='2'
-              className={props.statusMenu003}
+              className={`text-p1-regular ${props.statusMenu003}`}
               onClick={handleClick}
             >
-              <Link to='/Page2'>Menu 3</Link>
+              <Link to='/Page2'>Preguntas frecuentes</Link>
             </li>
             <li
               id='3'
-              className={props.statusMenu004}
+              className={`text-p1-regular ${props.statusMenu004}`}
               onClick={handleClick}
             >
-              <Link to='/Page3'>Menu 4</Link>
+              <Link to='/Page3'>Contacto</Link>
             </li>
           </ul>
+          <BtnSurvey />
         </nav>
       </div>
     </section>
