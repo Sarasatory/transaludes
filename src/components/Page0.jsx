@@ -1,49 +1,16 @@
+import '../styles/components/Page.scss';
+import Pag0Sec001 from './Pag0Sec001';
+
 const Page0 = () => {
   return (
-    <>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-      <h1>PAGE 0</h1>
-    </>
+    <section
+      className='page'
+      id='page0'
+    >
+      <div className='max-container'>
+        <Pag0Sec001 />
+      </div>
+    </section>
   );
 };
 

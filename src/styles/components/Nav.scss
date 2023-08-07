@@ -12,6 +12,7 @@
 
   background-color: $col-white-90;
   backdrop-filter: blur(10rem);
+  box-shadow: 0px 2px 11px 1px rgba(0, 0, 0, 0.1);
 }
 
 .nav-mobile {
@@ -65,6 +66,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  gap: 32rem;
 
   @media (min-width: $break-point-desktop) {
     height: $nav-height-tablet-desktop;
@@ -115,6 +117,10 @@
     align-items: center;
     gap: 32rem;
 
+    & li:hover {
+      color: $col-main-blue;
+    }
+
     @media (min-width: $break-point-desktop) {
       margin-bottom: 0;
       flex-direction: row;
@@ -123,10 +129,6 @@
     }
 
     @media (min-width: $break-point-desktop) {
-    }
-
-    & li:hover {
-      color: $col-main-blue;
     }
   }
 
@@ -189,13 +191,19 @@
   .selected {
     padding: 0 5rem 18rem 5rem;
 
-    color: $col-main-blue;
     font-weight: $font-w-medium;
+    color: $col-main-blue;
 
     background: $gradient-action-blue;
     background-repeat: no-repeat;
     background-size: 100% 3rem;
     background-position: center 90%;
+
+    & span {
+      // background-clip: text;
+      // background-image: $gradient-action-blue;
+      // color: transparent;
+    }
 
     @media (min-width: $break-point-desktop) {
       padding: 18rem 5rem;
@@ -203,7 +211,7 @@
   }
 
   .no-selected {
-    padding: 0 5rem;
+    padding: 0 5rem 18rem 5rem;
 
     @media (min-width: $break-point-desktop) {
       padding: 18rem 5rem;

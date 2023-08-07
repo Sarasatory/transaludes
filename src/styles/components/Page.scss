@@ -1,0 +1,19 @@
+@import '../core/Variables.scss';
+
+.page {
+  width: 100%;
+  min-height: calc(100vh - $nav-height-mobile);
+  margin-top: $nav-height-mobile;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: antiquewhite;
+
+  @media (min-width: $break-point-desktop) {
+    min-height: calc(100vh - $nav-height-tablet-desktop);
+    margin-top: $nav-height-tablet-desktop;
+  }
+}

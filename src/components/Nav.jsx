@@ -100,28 +100,36 @@ const Nav = (props) => {
               className={`text-p1-regular ${props.statusMenu001}`}
               onClick={handleClick}
             >
-              <Link to='/'>Estudio Transaludes</Link>
+              <Link to='/'>
+                <span>Estudio Transaludes </span>{' '}
+              </Link>
             </li>
             <li
               id='1'
               className={`text-p1-regular ${props.statusMenu002}`}
               onClick={handleClick}
             >
-              <Link to='/Page1'>Equipo</Link>
+              <Link to='/Page1'>
+                <span>Equipo</span>
+              </Link>
             </li>
             <li
               id='2'
               className={`text-p1-regular ${props.statusMenu003}`}
               onClick={handleClick}
             >
-              <Link to='/Page2'>Preguntas frecuentes</Link>
+              <Link to='/Page2'>
+                <span>Preguntas frecuentes</span>
+              </Link>
             </li>
             <li
               id='3'
               className={`text-p1-regular ${props.statusMenu004}`}
               onClick={handleClick}
             >
-              <Link to='/Page3'>Contacto</Link>
+              <Link to='/Page3'>
+                <span>Contacto</span>
+              </Link>
             </li>
           </ul>
           <BtnSurvey />

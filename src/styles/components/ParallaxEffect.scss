@@ -1,0 +1,60 @@
+@import '../core/Variables.scss';
+
+.parallax-container {
+  width: calc(100vw - 32rem);
+  height: calc(100vw - 32rem);
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // border: 1rem solid black;
+
+  @media (min-width: $break-point-tablet) {
+    width: calc(45vw - 32rem);
+    height: calc(45vw - 32rem);
+  }
+}
+
+.layer {
+  width: calc(100vw - 32rem);
+  height: calc(100vw - 32rem);
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.2s ease;
+
+  @media (min-width: $break-point-tablet) {
+    width: calc(45vw - 32rem);
+    height: calc(45vw - 32rem);
+  }
+}
+
+.layer1 {
+  background-image: url('../../assets/images/capa1.svg');
+  background-size: 95%;
+  background-position: center center;
+  z-index: 1;
+}
+
+.layer2 {
+  background-image: url('../../assets/images/capa2.svg');
+  z-index: 3;
+}
+
+.layer3 {
+  background-image: url('../../assets/images/capa3.svg');
+  z-index: 3;
+}
+
+.layer4 {
+  background-image: url('../../assets/images/capa4.svg');
+  z-index: 4;
+}
+
+.layer5 {
+  background-image: url('../../assets/images/capa5.svg');
+  z-index: 5;
+}

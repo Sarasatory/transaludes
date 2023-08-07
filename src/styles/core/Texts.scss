@@ -2,7 +2,25 @@
 // TEXTOS
 //
 
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600&family=Urbanist:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600&family=Urbanist:wght@300;500;600&display=swap');
+
+.text-gradient-action-blue {
+  background-clip: text;
+  background-image: $gradient-action-blue;
+  color: transparent;
+}
+
+.ta-left {
+  text-align: left;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.ta-right {
+  text-align: right;
+}
 
 .text-h1 {
   text-align: left;
@@ -102,6 +120,7 @@
 
   font-size: 18rem;
   letter-spacing: 0;
+
   @media (min-width: $break_point_tablet) {
   }
   @media (min-width: $break_point_desktop) {
