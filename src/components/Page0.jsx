@@ -1,5 +1,9 @@
 import '../styles/components/Page.scss';
 import Pag0Sec001 from './Pag0Sec001';
+import Pag0Sec002 from './Pag0Sec002';
+import Pag0Sec003 from './Pag0Sec003';
+// import Pag0Sec004 from './Pag0Sec004';
+import Pag0Sec005 from './Pag0Sec005';
 
 const Page0 = () => {
   return (
@@ -7,9 +11,11 @@ const Page0 = () => {
       className='page'
       id='page0'
     >
-      <div className='max-container'>
-        <Pag0Sec001 />
-      </div>
+      <Pag0Sec001 />
+      <Pag0Sec002 />
+      <Pag0Sec003 />
+      {/* <Pag0Sec004 /> */}
+      <Pag0Sec005 />
     </section>
   );
 };

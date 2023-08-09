@@ -1,0 +1,23 @@
+@import '../core/Variables.scss';
+@import '../core/Global.scss';
+
+.p0s2 {
+  width: 100%;
+  padding: 32rem;
+
+  @include flexCenteredRow();
+
+  background-color: $col--neutrals-background;
+
+  @media (min-width: $break-point-tablet) {
+    &__text {
+      width: 100%;
+
+      @include flexRight();
+
+      & p {
+        max-width: 550rem;
+      }
+    }
+  }
+}

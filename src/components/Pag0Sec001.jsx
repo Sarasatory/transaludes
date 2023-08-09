@@ -3,6 +3,15 @@ import BtnSurvey from './BtnSurvey';
 import ParallaxEffect from './ParallaxEffect';
 
 const Pag0Sec001 = () => {
+  const images_url = 'src/assets/images/dynamic-image-001';
+  const dynamic_image = [
+    `${images_url}/capa1.svg`,
+    `${images_url}/capa2.svg`,
+    `${images_url}/capa3.svg`,
+    `${images_url}/capa4.svg`,
+    `${images_url}/capa5.svg`,
+  ];
+
   return (
     <section className='p0s1'>
       <div className='max-container'>
@@ -31,7 +40,7 @@ const Pag0Sec001 = () => {
             <BtnSurvey />
           </div>
           <div className='p0s1__grid--img'>
-            <ParallaxEffect />
+            <ParallaxEffect images={dynamic_image} />
           </div>
         </div>
       </div>

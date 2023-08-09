@@ -1,41 +1,36 @@
 import {useRef, useEffect} from 'react';
+import PropTypes from 'prop-types';
 import '../styles/components/ParallaxEffect.scss';
 
-const ParallaxEffect = () => {
+const ParallaxEffect = ({images}) => {
   const parallaxContainer = useRef(null);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
+      if (!parallaxContainer.current) return; // Verifica si la referencia está disponible
+
       const x = (e.clientX / window.innerWidth - 0.5) * 5;
       const y = (e.clientY / window.innerHeight - 0.5) * 2.5;
 
       const layers = parallaxContainer.current.querySelectorAll('.layer');
 
       layers.forEach((layer, index) => {
-        layer.style.transition = 'none'; // Restablecer la transición en cada ciclo
-        layer.style.transition = 'transform 0.5s ease';
+        layer.style.transition = 'none';
 
-        // Ajustar el cálculo de moveX para cada capa
         let moveX = x * (index + 1) * 5;
-        if (index === 1) {
-          moveX *= 0.3; // Mover hacia la derecha
-        } else if (index === 2) {
-          moveX *= 0.6; // Mover hacia la derecha
-        } else if (index === 3) {
-          moveX *= -0.2; // Mover hacia la izquierda
-        } else if (index === 4) {
-          moveX *= -0.5; // Mover hacia la izquierda
-        }
-
-        // const moveY = y * (index + 1) * 2.5;
         let moveY = y * (index + 1) * 5;
+
         if (index === 1) {
+          moveX *= 0.3;
           moveY *= 0.3;
         } else if (index === 2) {
+          moveX *= 0.6;
           moveY *= 0.2;
         } else if (index === 3) {
+          moveX *= -0.2;
           moveY *= -0.2;
         } else if (index === 4) {
+          moveX *= -0.5;
           moveY *= 0.3;
         }
 
@@ -44,6 +39,8 @@ const ParallaxEffect = () => {
     };
 
     const handleMouseLeave = () => {
+      if (!parallaxContainer.current) return;
+
       const layers = parallaxContainer.current.querySelectorAll('.layer');
 
       layers.forEach((layer) => {
@@ -52,18 +49,25 @@ const ParallaxEffect = () => {
       });
     };
 
-    parallaxContainer.current.addEventListener('mousemove', handleMouseMove);
-    parallaxContainer.current.addEventListener('mouseleave', handleMouseLeave);
-
-    return () => {
-      parallaxContainer.current.removeEventListener(
-        'mousemove',
-        handleMouseMove
-      );
-      parallaxContainer.current.removeEventListener(
+    if (parallaxContainer.current) {
+      parallaxContainer.current.addEventListener('mousemove', handleMouseMove);
+      parallaxContainer.current.addEventListener(
         'mouseleave',
         handleMouseLeave
       );
+    }
+
+    return () => {
+      if (parallaxContainer.current) {
+        parallaxContainer.current.removeEventListener(
+          'mousemove',
+          handleMouseMove
+        );
+        parallaxContainer.current.removeEventListener(
+          'mouseleave',
+          handleMouseLeave
+        );
+      }
     };
   }, []);
 
@@ -72,13 +76,19 @@ const ParallaxEffect = () => {
       className='parallax-container'
       ref={parallaxContainer}
     >
-      <div className='layer layer1'></div>
-      <div className='layer layer2'></div>
-      <div className='layer layer3'></div>
-      <div className='layer layer4'></div>
-      <div className='layer layer5'></div>
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className={`layer layer${index + 1}`}
+          style={{backgroundImage: `url(${image})`}}
+        ></div>
+      ))}
     </div>
   );
+};
+
+ParallaxEffect.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default ParallaxEffect;

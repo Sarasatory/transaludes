@@ -4,56 +4,46 @@ import '../styles/components/Nav.scss';
 import LogoRectangle from './LogoRectangle';
 import BtnSurvey from './BtnSurvey';
 
-import {Link} from 'react-router-dom';
-import {useState, useEffect} from 'react';
+import {Link, useLocation} from 'react-router-dom';
+import {useEffect} from 'react';
 
 const Nav = (props) => {
-  //
-  // CONSTANTES DE ESTADO
-  //
-  const [URL, setURL] = useState('#/');
+  const location = useLocation();
 
-  // VARIABLES Y CONSTANTES GENERALES
-  //
-
-  //
-  // HOOKS
-  //
   useEffect(() => {
-    if (URL === undefined || URL === '' || URL === '#/')
+    const pathname = location.pathname;
+
+    if (pathname === '/' || pathname === '') {
       props.setStatusMenu001('selected');
-    else props.setStatusMenu001('no-selected');
-
-    if (URL === '#/Page1') props.setStatusMenu002('selected');
-    else props.setStatusMenu002('no-selected');
-
-    if (URL === '#/Page2') props.setStatusMenu003('selected');
-    else props.setStatusMenu003('no-selected');
-
-    if (URL === '#/Page3') props.setStatusMenu004('selected');
-    else props.setStatusMenu004('no-selected');
-
-    const allowedUrls = ['', '#/', '#/Page1', '#/Page2', '#/Page3'];
-    if (!allowedUrls.includes(URL)) {
+      props.setStatusMenu002('no-selected');
+      props.setStatusMenu003('no-selected');
+      props.setStatusMenu004('no-selected');
+    } else if (pathname === '/Page1') {
+      props.setStatusMenu001('no-selected');
+      props.setStatusMenu002('selected');
+      props.setStatusMenu003('no-selected');
+      props.setStatusMenu004('no-selected');
+    } else if (pathname === '/Page2') {
+      props.setStatusMenu001('no-selected');
+      props.setStatusMenu002('no-selected');
+      props.setStatusMenu003('selected');
+      props.setStatusMenu004('no-selected');
+    } else if (pathname === '/Page3') {
+      props.setStatusMenu001('no-selected');
+      props.setStatusMenu002('no-selected');
+      props.setStatusMenu003('no-selected');
+      props.setStatusMenu004('selected');
+    } else {
       props.setStatusMenu001('');
       props.setStatusMenu002('');
       props.setStatusMenu003('');
       props.setStatusMenu004('');
     }
-  }, [URL]);
+  }, [location]);
 
-  //
-  // FUNCIONES MANEJADORAS
-  //
   const handleClick = () => {
     props.changeVisibilityNav();
-
-    setURL(window.location.hash);
   };
-
-  //
-  // FUNCIONES GENERALES
-  //
 
   return (
     <section className='section-nav'>
