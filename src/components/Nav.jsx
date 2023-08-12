@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import '../styles/components/Nav.scss';
 
 import LogoRectangle from './LogoRectangle';
@@ -6,6 +5,8 @@ import BtnSurvey from './BtnSurvey';
 
 import {Link, useLocation} from 'react-router-dom';
 import {useEffect} from 'react';
+
+import dataMenu from '../data/dataMenu.json';
 
 const Nav = (props) => {
   const location = useLocation();
@@ -85,13 +86,26 @@ const Nav = (props) => {
             </li>
           </ul>
           <ul className='nav__menu'>
+            {/* {dataMenu.menu.map((item, index) => (
+              <li
+                key={index}
+                id={index}
+                className={`text-p1-regular ${props.statusMenu00}${index}`}
+                onClick={handleClick}
+              >
+                <Link to={item.route}>
+                  <span>{item.text}</span>
+                </Link>
+              </li>
+            ))} */}
+
             <li
               id='0'
               className={`text-p1-regular ${props.statusMenu001}`}
               onClick={handleClick}
             >
-              <Link to='/'>
-                <span>Estudio Transaludes </span>{' '}
+              <Link to={dataMenu.menu[0].route}>
+                <span>{dataMenu.menu[0].text}</span>
               </Link>
             </li>
             <li
@@ -99,8 +113,8 @@ const Nav = (props) => {
               className={`text-p1-regular ${props.statusMenu002}`}
               onClick={handleClick}
             >
-              <Link to='/Page1'>
-                <span>Equipo</span>
+              <Link to={dataMenu.menu[1].route}>
+                <span>{dataMenu.menu[1].text}</span>
               </Link>
             </li>
             <li
@@ -108,8 +122,8 @@ const Nav = (props) => {
               className={`text-p1-regular ${props.statusMenu003}`}
               onClick={handleClick}
             >
-              <Link to='/Page2'>
-                <span>Preguntas frecuentes</span>
+              <Link to={dataMenu.menu[2].route}>
+                <span>{dataMenu.menu[2].text}</span>
               </Link>
             </li>
             <li
@@ -117,8 +131,8 @@ const Nav = (props) => {
               className={`text-p1-regular ${props.statusMenu004}`}
               onClick={handleClick}
             >
-              <Link to='/Page3'>
-                <span>Contacto</span>
+              <Link to={dataMenu.menu[3].route}>
+                <span>{dataMenu.menu[3].text}</span>
               </Link>
             </li>
           </ul>

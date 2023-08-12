@@ -2,19 +2,19 @@
   "menu": [
     {
       "text": "Estudio transaludes",
-      "route": "/study"
+      "route": "/"
     },
     {
       "text": "Equipo",
-      "route": "/team"
+      "route": "/Page1"
     },
     {
       "text": "Preguntas frecuentes",
-      "route": "/faqs"
+      "route": "/Page2"
     },
     {
       "text": "Contacto",
-      "route": "/contact"
+      "route": "/Page3"
     }
   ]
 }

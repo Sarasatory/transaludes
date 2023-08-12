@@ -1,4 +1,4 @@
-import '../styles/components/Pag0Sec005.scss';
+import '../styles/components/PagSecTextImg.scss';
 import ParallaxEffect from './ParallaxEffect';
 
 const Pag0Sec005 = () => {
@@ -22,19 +22,19 @@ const Pag0Sec005 = () => {
               permitirá:
             </p>
             <ul>
-              <li className='list-li-img'>
+              <li className='list-li text-p2'>
                 Comparar y monitorizar su estado de salud con el de la población
                 general en España.
               </li>
-              <li className='list-li-img'>
+              <li className='list-li text-p2'>
                 Analizar la discriminación que sufre, especialmente en el
                 sistema sanitario.
               </li>
-              <li className='list-li-img'>
+              <li className='list-li text-p2'>
                 Orientar y adecuar las intervenciones preventivas y
                 asistenciales a sus necesidades.
               </li>
-              <li className='list-li-img'>
+              <li className='list-li text-p2'>
                 Difundir resultados útiles para las instituciones sanitarias y
                 las entidades comunitarias.
               </li>

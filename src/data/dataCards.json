@@ -1,0 +1,24 @@
+{
+  "cards": [
+    {
+      "img": "src/assets/icons/bullet000.svg",
+      "title": "Salud",
+      "paragraph": "Conocer el estado de salud física, mental y sexual, así como identificar las principales barreras de acceso a los servicios sanitarios."
+    },
+    {
+      "img": "src/assets/icons/bullet001.svg",
+      "title": "Uso de sustancias",
+      "paragraph": "Medir el consumo de alcohol y otras sustancias psicoactivas y sus posibles repercusiones en la salud, así como el impacto que ha tenido la pandemia del COVID-19."
+    },
+    {
+      "img": "src/assets/icons/bullet002.svg",
+      "title": "Discriminación",
+      "paragraph": "Recoger datos sobre discriminación y violencia física, sexual y psicológica hacia las personas trans y/o no binarias. "
+    },
+    {
+      "img": "src/assets/icons/bullet003.svg",
+      "title": "Despatologización",
+      "paragraph": "Trabajar desde el reconocimiento de que las diferencias en salud tienen una base social con raíces en el estigma y la discriminación."
+    }
+  ]
+}

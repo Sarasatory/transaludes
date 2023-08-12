@@ -1,4 +1,4 @@
-import '../styles/components/Pag0Sec001.scss';
+import '../styles/components/PagSecTextImg.scss';
 import BtnSurvey from './BtnSurvey';
 import ParallaxEffect from './ParallaxEffect';
 
@@ -18,7 +18,7 @@ const Pag0Sec001 = () => {
         <div className='p0s1__grid'>
           <div className='p0s1__grid--text'>
             <h1 className='text-h1'>Transaludes</h1>
-            <p className='text-p2'>
+            <p className='text-p1-regular'>
               El primer estudio a nivel nacional en España que busca conocer el
               estado de salud de las personas trans y/o no binarias.
             </p>
@@ -27,15 +27,19 @@ const Pag0Sec001 = () => {
               15 años o más?
             </p>
             <ul>
-              <li className='list-li-img'>
+              <li className='list-li text-p2'>
                 La encuesta es totalmente anónima.
               </li>
-              <li className='list-li-img'>Se completa en unos 30 minutos.</li>
-              <li className='list-li-img'>
+              <li className='list-li text-p2'>
+                Se completa en unos 30 minutos.
+              </li>
+              <li className='list-li text-p2'>
                 Puedes guardarla y continuar en otro momento desde el mismo
                 dispositivo.
               </li>
-              <li className='list-li-img'>Mejor desde ordenador o tablet.</li>
+              <li className='list-li text-p2'>
+                Mejor desde ordenador o tablet.
+              </li>
             </ul>
             <BtnSurvey />
           </div>

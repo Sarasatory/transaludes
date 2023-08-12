@@ -3,7 +3,7 @@
 
 .p0s2 {
   width: 100%;
-  padding: 32rem;
+  padding: 40rem 32rem;
 
   @include flexCenteredRow();
 
@@ -13,7 +13,7 @@
     &__text {
       width: 100%;
 
-      @include flexRight();
+      @include flexLeftRow();
 
       & p {
         max-width: 550rem;

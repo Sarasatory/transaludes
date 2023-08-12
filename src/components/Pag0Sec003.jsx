@@ -1,4 +1,4 @@
-import '../styles/components/Pag0Sec003.scss';
+import '../styles/components/PagSecImgText.scss';
 import ParallaxEffect from './ParallaxEffect';
 
 const Pag0Sec003 = () => {
@@ -23,11 +23,11 @@ const Pag0Sec003 = () => {
               binarias en España.
             </p>
             <ul>
-              <li className='list-li-img'>
+              <li className='list-li text-p2'>
                 Permitirá identificar las necesidades de salud de nuestra
                 comunidad.
               </li>
-              <li className='list-li-img'>
+              <li className='list-li text-p2'>
                 Propondrá mejoras en la atención de los servicios socio
                 sanitarios.
               </li>
