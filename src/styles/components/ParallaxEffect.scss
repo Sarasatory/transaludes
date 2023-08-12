@@ -7,6 +7,11 @@
   position: relative;
 
   // border: 1rem solid black;
+
+  @media (min-width: $break-point-desktop) {
+    width: 80%;
+    padding-bottom: 80%;
+  }
 }
 
 .layer {

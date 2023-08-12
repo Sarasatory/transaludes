@@ -4,6 +4,8 @@ import Pag0Sec002 from './Pag0Sec002';
 import Pag0Sec003 from './Pag0Sec003';
 import Pag0Sec004 from './Pag0Sec004';
 import Pag0Sec005 from './Pag0Sec005';
+import Pag0Sec006 from './Pag0Sec006';
+// import Footer from './Footer';
 
 const Page0 = () => {
   return (
@@ -16,6 +18,8 @@ const Page0 = () => {
       <Pag0Sec003 />
       <Pag0Sec004 />
       <Pag0Sec005 />
+      <Pag0Sec006 />
+      {/* <Footer /> */}
     </section>
   );
 };

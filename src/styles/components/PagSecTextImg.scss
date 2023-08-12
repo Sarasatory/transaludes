@@ -9,14 +9,14 @@
 
   &__grid {
     width: 100%;
-    padding: 0 16rem;
+    padding: 0 16rem 40rem 16rem;
 
     display: grid;
     grid-template-rows: repeat(2, auto);
-    gap: 32rem;
 
     @media (min-width: $break-point-tablet) {
-      grid-template-columns: 55% 45%;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     &--text {
@@ -37,6 +37,10 @@
       width: 100%;
 
       @include flexCenteredRow;
+
+      @media (min-width: $break-point-tablet) {
+        padding: 40rem 0;
+      }
     }
   }
 }

@@ -51,9 +51,12 @@
   font-family: $font-family-red-hat-display;
   font-weight: $font-w-medium;
 
-  font-size: 26rem;
+  font-size: 22rem;
   letter-spacing: 0;
   line-height: 36rem;
+  @media (min-width: $break-point-mobile) {
+    font-size: 26rem;
+  }
   @media (min-width: $break_point_tablet) {
   }
   @media (min-width: $break_point_desktop) {

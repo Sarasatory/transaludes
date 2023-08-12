@@ -1,0 +1,417 @@
+@import '../core/Variables.scss';
+@import '../core/Global.scss';
+
+.p0s6 {
+  position: relative;
+
+  width: 100%;
+
+  @include flexCenteredColum();
+
+  background-color: $col--neutrals-softest-background;
+  .max-container {
+    padding: 200rem 0 220rem 0;
+
+    @media (min-width: $break-point-desktop) {
+      padding: 340rem 0 360rem 0;
+    }
+  }
+
+  &__little-container {
+    width: 80%;
+
+    @include flexCenteredColum();
+    gap: 24rem;
+
+    @media (min-width: $break-point-tablet) {
+      width: 60%;
+    }
+    @media (min-width: $break-point-desktop) {
+      width: 40%;
+    }
+  }
+
+  &__bg-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &--001 {
+      position: absolute;
+      width: 57rem;
+      height: 60rem;
+
+      top: 60rem;
+      right: 24%;
+
+      background: url(../../assets/images/p0s6/avatar000.svg) no-repeat center
+        center / cover;
+
+      @media (min-width: $break-point-tablet) {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        right: 35%;
+      }
+
+      @media (min-width: $break-point-desktop) {
+        width: 85rem;
+        height: 90rem;
+
+        top: 90rem;
+        right: 35%;
+      }
+    }
+
+    &--002 {
+      position: absolute;
+      width: 48rem;
+      height: 44rem;
+
+      top: 125rem;
+      right: 5%;
+
+      background: url(../../assets/images/p0s6/bubble000.svg) no-repeat center
+        center / cover;
+
+      @media (min-width: $break-point-tablet) {
+        // width: 57rem;
+        // height: 60rem;
+
+        top: 60rem;
+        right: 20%;
+      }
+
+      @media (min-width: $break-point-desktop) {
+        width: 72rem;
+        height: 65rem;
+
+        top: 80rem;
+        right: 26%;
+      }
+    }
+
+    &--003 {
+      @media (min-width: $break-point-tablet) {
+        position: absolute;
+
+        background: url(../../assets/images/p0s6/avatar001.svg) no-repeat center
+          center / cover;
+
+        width: 57rem;
+        height: 60rem;
+
+        top: 92rem;
+        right: 9%;
+      }
+
+      @media (min-width: $break-point-desktop) {
+        width: 95rem;
+        height: 116rem;
+
+        top: 152rem;
+        right: 20%;
+      }
+    }
+
+    &--004 {
+      @media (min-width: $break-point-desktop) {
+        position: absolute;
+        background: url(../../assets/images/p0s6/bubble001.svg) no-repeat center
+          center / cover;
+
+        width: 105rem;
+        height: 132rem;
+
+        top: 263rem;
+        right: 12%;
+      }
+    }
+
+    &--005 {
+      @media (min-width: $break-point-desktop) {
+        position: absolute;
+
+        background: url(../../assets/images/p0s6/avatar002.svg) no-repeat center
+          center / cover;
+
+        width: 139rem;
+        height: 140rem;
+
+        top: 427rem;
+        right: 5%;
+      }
+    }
+
+    &--006 {
+      position: absolute;
+      width: 53rem;
+      height: 53rem;
+
+      top: 573rem;
+      right: 5%;
+
+      background: url(../../assets/images/p0s6/bubble002.svg) no-repeat center
+        center / cover;
+
+      @media (min-width: $break-point-tablet) {
+        width: 65rem;
+        height: 65rem;
+
+        top: 445rem;
+        right: 5%;
+      }
+
+      @media (min-width: $break-point-desktop) {
+        width: 111rem;
+        height: 112rem;
+
+        top: 621rem;
+        right: 6%;
+      }
+    }
+
+    &--007 {
+      position: absolute;
+      width: 62rem;
+      height: 63rem;
+
+      top: 610rem;
+      right: 25%;
+
+      background: url(../../assets/images/p0s6/avatar003.svg) no-repeat center
+        center / cover;
+
+      @media (min-width: $break-point-tablet) {
+        width: 117rem;
+        height: 120rem;
+
+        top: 471rem;
+        right: 15%;
+      }
+
+      @media (min-width: $break-point-desktop) {
+        width: 202rem;
+        height: 207rem;
+
+        top: 667rem;
+        right: 20%;
+      }
+    }
+
+    &--008 {
+      position: absolute;
+      width: 48rem;
+      height: 44rem;
+
+      top: 125rem;
+      left: 5%;
+
+      background: url(../../assets/images/p0s6/avatar004.svg) no-repeat center
+        center / cover;
+
+      @media (min-width: $break-point-tablet) {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        left: 15%;
+      }
+
+      @media (min-width: $break-point-desktop) {
+        width: 85rem;
+        height: 90rem;
+
+        top: 90rem;
+        left: 20%;
+      }
+    }
+
+    &--009 {
+      position: absolute;
+      width: 48rem;
+      height: 44rem;
+
+      top: 125rem;
+      left: 5%;
+
+      background: url(../../assets/images/p0s6/bubble003.svg) no-repeat center
+        center / cover;
+
+      @media (min-width: $break-point-tablet) {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        left: 35%;
+      }
+
+      @media (min-width: $break-point-desktop) {
+        width: 85rem;
+        height: 90rem;
+
+        top: 90rem;
+        left: 35%;
+      }
+    }
+
+    &--010 {
+      position: absolute;
+      width: 48rem;
+      height: 44rem;
+
+      top: 125rem;
+      left: 5%;
+
+      background: url(../../assets/images/p0s6/avatar005.svg) no-repeat center
+        center / cover;
+
+      @media (min-width: $break-point-tablet) {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        left: 35%;
+      }
+
+      @media (min-width: $break-point-desktop) {
+        width: 85rem;
+        height: 90rem;
+
+        top: 90rem;
+        left: 35%;
+      }
+    }
+
+    &--011 {
+      position: absolute;
+      width: 48rem;
+      height: 44rem;
+
+      top: 125rem;
+      left: 5%;
+
+      background: url(../../assets/images/p0s6/bubble004.svg) no-repeat center
+        center / cover;
+
+      @media (min-width: $break-point-tablet) {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        left: 35%;
+      }
+
+      @media (min-width: $break-point-desktop) {
+        width: 85rem;
+        height: 90rem;
+
+        top: 90rem;
+        left: 35%;
+      }
+    }
+
+    &--012 {
+      position: absolute;
+      width: 48rem;
+      height: 44rem;
+
+      top: 125rem;
+      left: 5%;
+
+      background: url(../../assets/images/p0s6/avatar006.svg) no-repeat center
+        center / cover;
+
+      @media (min-width: $break-point-tablet) {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        left: 35%;
+      }
+
+      @media (min-width: $break-point-desktop) {
+        width: 85rem;
+        height: 90rem;
+
+        top: 90rem;
+        left: 35%;
+      }
+    }
+
+    &--013 {
+      position: absolute;
+      width: 48rem;
+      height: 44rem;
+
+      top: 125rem;
+      left: 5%;
+
+      background: url(../../assets/images/p0s6/bubble005.svg) no-repeat center
+        center / cover;
+
+      @media (min-width: $break-point-tablet) {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        left: 35%;
+      }
+
+      @media (min-width: $break-point-desktop) {
+        width: 85rem;
+        height: 90rem;
+
+        top: 90rem;
+        left: 35%;
+      }
+    }
+
+    &--014 {
+      position: absolute;
+      width: 48rem;
+      height: 44rem;
+
+      top: 125rem;
+      left: 5%;
+
+      background: url(../../assets/images/p0s6/avatar007.svg) no-repeat center
+        center / cover;
+
+      @media (min-width: $break-point-tablet) {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        left: 35%;
+      }
+
+      @media (min-width: $break-point-desktop) {
+        width: 85rem;
+        height: 90rem;
+
+        top: 90rem;
+        left: 35%;
+      }
+    }
+  }
+
+  & .logo-square {
+    display: none;
+    @media (min-width: $break-point-tablet) {
+      position: absolute;
+      top: 530rem;
+
+      width: 100rem;
+      height: 100rem;
+
+      display: flex;
+    }
+    @media (min-width: $break-point-desktop) {
+      top: 730rem;
+
+      width: 130rem;
+      height: 130rem;
+    }
+  }
+}

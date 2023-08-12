@@ -3,31 +3,38 @@
 
 .p0s4 {
   width: 100%;
-  padding: 40rem 32rem;
 
-  @include flexCenteredColum();
+  @include flexCenteredColum;
 
   background-color: $col--neutrals-blue-background;
 
   .max-container {
+    padding: 40rem 32rem;
+
     @include flexLeftColumn;
     gap: 40rem;
+
+    @media (min-width: $break-point-tablet) {
+      padding: 40rem 32rem 80rem 32rem;
+    }
   }
 
   &__grid {
     width: 100%;
 
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
     gap: 32rem;
 
     @media (min-width: $break-point-tablet) {
-      padding: 0 48rem;
+      padding: 0 56rem;
       grid-template-rows: repeat(2, 1fr);
       grid-template-columns: repeat(2, 1fr);
     }
 
     @media (min-width: $break-point-desktop) {
+      padding: 0;
+      grid-template-rows: repeat(1, auto);
       grid-template-columns: repeat(4, 1fr);
     }
   }

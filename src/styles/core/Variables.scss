@@ -59,11 +59,12 @@ $gradient-action-blue: linear-gradient(144deg, #2ba3d9 0%, #3864ff 68.23%);
 $gradient-action-pink: linear-gradient(144deg, #ed099f 0%, #e20069 68.23%);
 
 // SIZES
-$break-point-tablet: 800px;
+$break-point-mobile: 390px;
+$break-point-tablet: 768px;
 $break-point-desktop: 1100px;
 
 $max-width-mobile: 390px;
-$max-width-tablet: 768px;
+$max-width-tablet: 900px;
 $max-width-desktop: 1200px;
 
 $width-mobile: 100%;
