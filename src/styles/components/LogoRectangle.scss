@@ -4,6 +4,12 @@
   width: 180rem;
   height: 54rem;
 
-  background: url(../../assets/images/logo-rectangle.svg) no-repeat center
-    center / cover;
+  display: inline-block;
+
+  background: url(../../assets/logos/logo-rectangle.svg) no-repeat center center /
+    contain;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

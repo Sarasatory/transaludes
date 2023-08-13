@@ -55,9 +55,7 @@ const Nav = (props) => {
               id='0'
               onClick={handleClick}
             >
-              <Link to='/'>
-                <LogoRectangle />
-              </Link>
+              <LogoRectangle />
             </li>
           </ul>
 
@@ -80,9 +78,7 @@ const Nav = (props) => {
               id='0'
               onClick={handleClick}
             >
-              <Link to='/'>
-                <LogoRectangle />
-              </Link>
+              <LogoRectangle />
             </li>
           </ul>
           <ul className='nav__menu'>

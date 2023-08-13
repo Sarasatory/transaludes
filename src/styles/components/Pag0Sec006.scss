@@ -18,6 +18,8 @@
   }
 
   &__little-container {
+    background-color: antiquewhite;
+
     width: 80%;
 
     @include flexCenteredColum();

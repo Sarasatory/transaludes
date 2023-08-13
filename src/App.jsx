@@ -6,6 +6,10 @@ import Page1 from './components/Page1';
 import Page2 from './components/Page2';
 import Page3 from './components/Page3';
 import Page404 from './components/Page404';
+import Legal from './components/Legal';
+import Privacy from './components/Privacy';
+import Cookies from './components/Cookies';
+import Footer from './components/Footer';
 
 import {Route, Routes, useLocation} from 'react-router-dom';
 import {useState, useEffect} from 'react';
@@ -81,9 +85,21 @@ const App = () => {
           path='*'
           element={<Page404 />}
         />
+        <Route
+          path='/Legal'
+          element={<Legal />}
+        />
+        <Route
+          path='/Privacy'
+          element={<Privacy />}
+        />
+        <Route
+          path='/Cookies'
+          element={<Cookies />}
+        />
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

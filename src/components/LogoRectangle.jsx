@@ -1,7 +1,14 @@
 import '../styles/components/LogoRectangle.scss';
 
 const LogoRectangle = () => {
-  return <div className='logo-rectangle'></div>;
+  return (
+    <>
+      <a
+        href='#'
+        className='logo-rectangle'
+      ></a>
+    </>
+  );
 };
 
 export default LogoRectangle;

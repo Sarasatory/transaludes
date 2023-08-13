@@ -1,7 +1,14 @@
 import '../styles/components/LogoSquare.scss';
 
 const LogoSquare = () => {
-  return <div className='logo-square'></div>;
+  return (
+    <>
+      <a
+        href='#'
+        className='logo-square'
+      ></a>
+    </>
+  );
 };
 
 export default LogoSquare;

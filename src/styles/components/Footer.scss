@@ -1,0 +1,132 @@
+@import '../core/Variables.scss';
+@import '../core/Global.scss';
+
+.footer {
+  width: 100%;
+  margin-top: 8rem;
+  @include flexCenteredColum;
+
+  gap: 4rem;
+
+  &__row001 {
+    width: 100%;
+    @include flexCenteredColum;
+
+    & .max-container {
+      width: 100%;
+      padding: 40rem 24rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32rem;
+
+      .footer__row001__rrss {
+        display: flex;
+        align-items: center;
+        gap: 40rem;
+        flex-wrap: wrap;
+
+        & .footer-icon {
+          width: 28rem;
+          height: 28rem;
+
+          transition: all 0.35s ease;
+        }
+
+        &--fb {
+          background: url(../../assets/icons/rrss/fb.svg) no-repeat center
+            center / contain;
+        }
+        &--ig {
+          background: url(../../assets/icons/rrss/ig.svg) no-repeat center
+            center / contain;
+        }
+        &--tw {
+          background: url(../../assets/icons/rrss/tw-machi.svg) no-repeat center
+            center / contain;
+          &:hover {
+            background: url(../../assets/icons/rrss/tw.svg) no-repeat center
+              center / contain;
+          }
+        }
+      }
+    }
+
+    background-color: $col--neutrals-softest-background;
+  }
+
+  &__row002 {
+    width: 100%;
+    @include flexCenteredColum;
+
+    & .max-container {
+      width: 100%;
+      padding: 40rem 24rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40rem;
+      flex-wrap: wrap;
+
+      @media (min-width: $break-point-tablet) {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+
+    background-color: $col--neutrals-softest-background;
+  }
+
+  &__row003 {
+    width: 100%;
+    padding: 24rem;
+
+    @include flexCenteredColum;
+
+    & .max-container {
+      justify-content: center;
+      align-items: center;
+
+      & ul {
+        flex-direction: column;
+        gap: 20rem;
+        text-align: center;
+
+        @media (min-width: $break-point-tablet) {
+          flex-direction: row;
+        }
+      }
+    }
+
+    & li:hover {
+      cursor: pointer;
+      color: $col-main-blue;
+    }
+
+    background-color: $col--neutrals-softest-background;
+  }
+
+  &__row004 {
+    width: 100%;
+    @include flexCenteredColum;
+
+    & .max-container {
+      width: 100%;
+      padding: 16rem;
+
+      @include flexLeftColumn;
+    }
+  }
+}
+
+.dot {
+  display: none;
+  @media (min-width: $break-point-tablet) {
+    display: inline-block;
+  }
+}

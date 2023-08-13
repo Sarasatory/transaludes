@@ -15,6 +15,7 @@ const Pag0Sec006 = () => {
             nuestro discurso en salud.
           </h4>
           <BtnSurvey />
+          <LogoSquare />
         </div>
         <span className='p0s6__bg-img p0s6__bg-img--001'></span>
         <span className='p0s6__bg-img p0s6__bg-img--002'></span>
@@ -23,7 +24,6 @@ const Pag0Sec006 = () => {
         <span className='p0s6__bg-img p0s6__bg-img--005'></span>
         <span className='p0s6__bg-img p0s6__bg-img--006'></span>
         <span className='p0s6__bg-img p0s6__bg-img--007'></span>
-        <LogoSquare className='logo-square' />
         <span className='p0s6__bg-img p0s6__bg-img--008'></span>
         <span className='p0s6__bg-img p0s6__bg-img--009'></span>
         <span className='p0s6__bg-img p0s6__bg-img--010'></span>
