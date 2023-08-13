@@ -1,0 +1,131 @@
+@import '../core/Variables.scss';
+@import '../core/Global.scss';
+
+.p1s1 {
+  position: relative;
+  width: 100%;
+  padding: 40rem 32rem;
+
+  @include flexCenteredColum();
+
+  &__little-container {
+    padding: 100rem 32rem;
+
+    @include flexCenteredColum();
+    gap: 20rem;
+
+    background-color: aquamarine;
+  }
+
+  @media (min-width: $break-point-desktop) {
+    &__bg-img {
+      position: absolute;
+
+      &--001 {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        right: 24%;
+
+        background: url(../../assets/images/p1s1/bubble000.svg) no-repeat center
+          center / contain;
+      }
+
+      &--002 {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        right: 34%;
+        background: url(../../assets/images/p1s1/avatar000.svg) no-repeat center
+          center / contain;
+      }
+
+      &--003 {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        right: 14%;
+        background: url(../../assets/images/p1s1/avatar000.svg) no-repeat center
+          center / contain;
+      }
+
+      &--004 {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        right: 4%;
+
+        background: url(../../assets/images/p1s1/bubble000.svg) no-repeat center
+          center / contain;
+      }
+
+      &--005 {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        right: 44%;
+        background: url(../../assets/images/p1s1/avatar000.svg) no-repeat center
+          center / contain;
+      }
+
+      &--006 {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        right: 54%;
+        background: url(../../assets/images/p1s1/avatar000.svg) no-repeat center
+          center / contain;
+      }
+
+      &--007 {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        right: 64%;
+
+        background: url(../../assets/images/p1s1/bubble000.svg) no-repeat center
+          center / contain;
+      }
+
+      &--008 {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        right: 74%;
+        background: url(../../assets/images/p1s1/avatar000.svg) no-repeat center
+          center / contain;
+      }
+
+      &--009 {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        right: 4%;
+        background: url(../../assets/images/p1s1/avatar000.svg) no-repeat center
+          center / contain;
+      }
+      &--010 {
+        width: 57rem;
+        height: 60rem;
+
+        top: 60rem;
+        right: 94%;
+
+        background: url(../../assets/images/p1s1/bubble000.svg) no-repeat center
+          center / contain;
+      }
+    }
+  }
+
+  @media (min-width: $break-point-tablet) {
+  }
+}

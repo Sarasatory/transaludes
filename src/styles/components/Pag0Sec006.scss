@@ -18,8 +18,6 @@
   }
 
   &__little-container {
-    background-color: antiquewhite;
-
     width: 80%;
 
     @include flexCenteredColum();
@@ -34,11 +32,8 @@
   }
 
   &__bg-img {
-    background-repeat: no-repeat;
-    background-size: contain;
-
+    position: absolute;
     &--001 {
-      position: absolute;
       width: 57rem;
       height: 60rem;
 
@@ -66,7 +61,6 @@
     }
 
     &--002 {
-      position: absolute;
       width: 48rem;
       height: 44rem;
 
@@ -95,8 +89,6 @@
 
     &--003 {
       @media (min-width: $break-point-tablet) {
-        position: absolute;
-
         background: url(../../assets/images/p0s6/avatar001.svg) no-repeat center
           center / contain;
 
@@ -118,7 +110,6 @@
 
     &--004 {
       @media (min-width: $break-point-desktop) {
-        position: absolute;
         background: url(../../assets/images/p0s6/bubble001.svg) no-repeat center
           center / contain;
 
@@ -132,8 +123,6 @@
 
     &--005 {
       @media (min-width: $break-point-desktop) {
-        position: absolute;
-
         background: url(../../assets/images/p0s6/avatar002.svg) no-repeat center
           center / contain;
 
@@ -146,7 +135,6 @@
     }
 
     &--006 {
-      position: absolute;
       width: 53rem;
       height: 53rem;
 
@@ -174,7 +162,6 @@
     }
 
     &--007 {
-      position: absolute;
       width: 62rem;
       height: 63rem;
 
@@ -202,7 +189,6 @@
     }
 
     &--008 {
-      position: absolute;
       width: 68rem;
       height: 64rem;
 
@@ -230,7 +216,6 @@
     }
 
     &--009 {
-      position: absolute;
       width: 61rem;
       height: 56rem;
 
@@ -259,7 +244,6 @@
 
     &--010 {
       @media (min-width: $break-point-desktop) {
-        position: absolute;
         background: url(../../assets/images/p0s6/avatar005.svg) no-repeat center
           center / contain;
         width: 138rem;
@@ -272,7 +256,6 @@
 
     &--011 {
       @media (min-width: $break-point-desktop) {
-        position: absolute;
         background: url(../../assets/images/p0s6/bubble004.svg) no-repeat center
           center / contain;
         width: 71rem;
@@ -285,7 +268,6 @@
 
     &--012 {
       @media (min-width: $break-point-tablet) {
-        position: absolute;
         background: url(../../assets/images/p0s6/avatar006.svg) no-repeat center
           center / contain;
         width: 59rem;
@@ -305,7 +287,6 @@
     }
 
     &--013 {
-      position: absolute;
       width: 48rem;
       height: 44rem;
 
@@ -333,7 +314,6 @@
     }
 
     &--014 {
-      position: absolute;
       width: 70rem;
       height: 70rem;
 
