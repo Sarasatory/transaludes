@@ -8,7 +8,7 @@ import Pag0Sec006 from './Pag0Sec006';
 
 const Page0 = () => {
   return (
-    <section
+    <main
       className='page'
       id='page0'
     >
@@ -18,7 +18,7 @@ const Page0 = () => {
       <Pag0Sec004 />
       <Pag0Sec005 />
       <Pag0Sec006 />
-    </section>
+    </main>
   );
 };
 

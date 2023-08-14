@@ -9,12 +9,15 @@
   @include flexCenteredColum();
 
   &__little-container {
-    padding: 100rem 32rem;
-
     @include flexCenteredColum();
     gap: 20rem;
 
-    background-color: aquamarine;
+    // background-color: aquamarine;
+
+    @media (min-width: $break-point-desktop) {
+      width: 68%;
+      padding: 100rem 0;
+    }
   }
 
   @media (min-width: $break-point-desktop) {
@@ -22,105 +25,106 @@
       position: absolute;
 
       &--001 {
-        width: 57rem;
-        height: 60rem;
+        width: 72rem;
+        height: 65rem;
 
-        top: 60rem;
-        right: 24%;
+        top: 38rem;
+        right: 29%;
 
         background: url(../../assets/images/p1s1/bubble000.svg) no-repeat center
           center / contain;
       }
 
       &--002 {
-        width: 57rem;
-        height: 60rem;
+        width: 73rem;
+        height: 81rem;
 
-        top: 60rem;
-        right: 34%;
+        top: 72rem;
+        right: 18%;
         background: url(../../assets/images/p1s1/avatar000.svg) no-repeat center
           center / contain;
       }
 
       &--003 {
-        width: 57rem;
-        height: 60rem;
+        width: 98rem;
+        height: 74rem;
 
-        top: 60rem;
-        right: 14%;
-        background: url(../../assets/images/p1s1/avatar000.svg) no-repeat center
+        top: 156rem;
+        right: 7%;
+        background: url(../../assets/images/p1s1/avatar001.svg) no-repeat center
           center / contain;
       }
 
       &--004 {
-        width: 57rem;
-        height: 60rem;
+        width: 62rem;
+        height: 79rem;
 
-        top: 60rem;
-        right: 4%;
+        top: 244rem;
+        right: 6%;
 
-        background: url(../../assets/images/p1s1/bubble000.svg) no-repeat center
+        background: url(../../assets/images/p1s1/bubble001.svg) no-repeat center
           center / contain;
       }
 
       &--005 {
-        width: 57rem;
-        height: 60rem;
+        width: 119rem;
+        height: 128rem;
 
-        top: 60rem;
-        right: 44%;
-        background: url(../../assets/images/p1s1/avatar000.svg) no-repeat center
+        top: 340rem;
+        right: 10%;
+        background: url(../../assets/images/p1s1/avatar002.svg) no-repeat center
           center / contain;
       }
 
       &--006 {
-        width: 57rem;
-        height: 60rem;
+        width: 119rem;
+        height: 165rem;
 
-        top: 60rem;
-        right: 54%;
-        background: url(../../assets/images/p1s1/avatar000.svg) no-repeat center
+        top: 312rem;
+        left: 10%;
+        background: url(../../assets/images/p1s1/avatar003.svg) no-repeat center
           center / contain;
       }
 
       &--007 {
         width: 57rem;
-        height: 60rem;
+        height: 70rem;
 
-        top: 60rem;
-        right: 64%;
+        top: 244rem;
+        left: 7%;
 
-        background: url(../../assets/images/p1s1/bubble000.svg) no-repeat center
+        background: url(../../assets/images/p1s1/bubble002.svg) no-repeat center
           center / contain;
       }
 
       &--008 {
-        width: 57rem;
-        height: 60rem;
+        width: 92rem;
+        height: 69rem;
 
-        top: 60rem;
-        right: 74%;
-        background: url(../../assets/images/p1s1/avatar000.svg) no-repeat center
+        top: 148rem;
+        left: 7%;
+        background: url(../../assets/images/p1s1/avatar004.svg) no-repeat center
           center / contain;
       }
 
       &--009 {
-        width: 57rem;
-        height: 60rem;
+        width: 81rem;
+        height: 75rem;
 
-        top: 60rem;
-        right: 4%;
-        background: url(../../assets/images/p1s1/avatar000.svg) no-repeat center
+        top: 75rem;
+        left: 18%;
+        background: url(../../assets/images/p1s1/avatar005.svg) no-repeat center
           center / contain;
       }
+
       &--010 {
-        width: 57rem;
-        height: 60rem;
+        width: 72rem;
+        height: 65rem;
 
-        top: 60rem;
-        right: 94%;
+        top: 38rem;
+        left: 29%;
 
-        background: url(../../assets/images/p1s1/bubble000.svg) no-repeat center
+        background: url(../../assets/images/p1s1/bubble003.svg) no-repeat center
           center / contain;
       }
     }

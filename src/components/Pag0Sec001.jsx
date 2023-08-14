@@ -13,7 +13,7 @@ const Pag0Sec001 = () => {
   ];
 
   return (
-    <section className='p0s1'>
+    <article className='p0s1'>
       <div className='max-container'>
         <div className='p0s1__grid'>
           <div className='p0s1__grid--text'>
@@ -48,7 +48,7 @@ const Pag0Sec001 = () => {
           </div>
         </div>
       </div>
-    </section>
+    </article>
   );
 };
 

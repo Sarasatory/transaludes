@@ -5,20 +5,18 @@ const Pag1Sec001 = () => {
     <section className='p1s1'>
       <div className='max-container'>
         <div className='p1s1__little-container'>
-          <h1 className='text-h1'>Quiénes somos</h1>
-          <p className='text-p2'>
+          <h1 className='text-h1 ta-center'>Quiénes somos</h1>
+          <p className='text-p1-regular ta-center'>
             TranSaludes es un proyecto liderado por un equipo de investigadores
             del Instituto de Salud Carlos III.
           </p>
-          <p className='text-p2'>
-            TranSaludes es un proyecto liderado por un equipo de investigadores
-            del Instituto de Salud Carlos III. Se trata de un equipo de trabajo
-            multidisciplinar, pionero y reconocido en el ámbito de la
-            epidemiología y salud pública. El proyecto está financiado por la
-            Unión Europea, el Ministerio de Sanidad y el Ministerio de Ciencia e
-            Innovación.
+          <p className='text-p2 ta-center white-space-jump'>
+            Se trata de un equipo de trabajo multidisciplinar, pionero y
+            reconocido en el ámbito de la epidemiología y salud pública. El
+            proyecto está financiado por la Unión Europea, el Ministerio de
+            Sanidad y el Ministerio de Ciencia e Innovación.
           </p>
-          <p className='text-p2'>
+          <p className='text-p2 ta-center'>
             En el proyecto participan personas y colectivos de nuestra
             comunidad.
           </p>

@@ -9,7 +9,7 @@ const Footer = () => {
     <section className='footer'>
       <div className='footer__row001'>
         <div className='max-container'>
-          <LogoRectangle />
+          <LogoRectangle className='footer__row001__logo-rectangle' />
           <div className='footer__row001__rrss'>
             <a href='#'>
               <div className='footer-icon footer__row001__rrss--fb'></div>
