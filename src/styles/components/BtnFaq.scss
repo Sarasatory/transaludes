@@ -1,0 +1,51 @@
+@import '../core/Variables.scss';
+@import '../core/Global.scss';
+
+.btn-faq {
+  min-width: 44rem;
+  min-height: 44rem;
+
+  animation: rotateFade 0.7s ease forwards;
+
+  &:hover {
+    cursor: pointer;
+    background: url(../../assets/icons/btnMoreHover.svg) no-repeat center center /
+      cover !important;
+  }
+
+  &.open {
+    animation: rotateOpen 0.7s ease forwards;
+
+    &:hover {
+      cursor: pointer;
+      background: url(../../assets/icons/btnLessHover.svg) no-repeat center
+        center / cover !important;
+    }
+  }
+}
+
+@keyframes rotateFade {
+  0% {
+    transform: rotate(0deg);
+    background: url(../../assets/icons/btnLess.svg) no-repeat center center /
+      cover;
+  }
+  100% {
+    transform: rotate(90deg);
+    background: url(../../assets/icons/btnMore.svg) no-repeat center center /
+      cover;
+  }
+}
+
+@keyframes rotateOpen {
+  0% {
+    transform: rotate(90deg);
+    background: url(../../assets/icons/btnMore.svg) no-repeat center center /
+      cover;
+  }
+  100% {
+    transform: rotate(0deg);
+    background: url(../../assets/icons/btnLess.svg) no-repeat center center /
+      cover;
+  }
+}

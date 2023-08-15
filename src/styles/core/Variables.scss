@@ -25,6 +25,7 @@ $col-text-body: #4b5d72;
 $col-text-strong: #403764;
 
 $col-main-blue: #2ba3d9;
+$col-main-blue-hover: #3864ff;
 $col-main-pink: #ea579b;
 $col-main-purple: #825da3;
 $col-main-yellow: #fdcd4c;
@@ -59,7 +60,17 @@ $gradient-logo-yellow: radial-gradient(
 );
 
 $gradient-action-blue: linear-gradient(144deg, #2ba3d9 0%, #3864ff 68.23%);
+$gradient-action-pink-hover: linear-gradient(
+  144deg,
+  #e20069 0%,
+  #8b119f 68.23%
+);
 $gradient-action-pink: linear-gradient(144deg, #ed099f 0%, #e20069 68.23%);
+$gradient-action-blue-hover: linear-gradient(
+  144deg,
+  #3864ff 0%,
+  #271884 68.23%
+);
 
 // SIZES
 $break-point-mobile: 390px;
