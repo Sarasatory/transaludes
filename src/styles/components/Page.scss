@@ -3,11 +3,10 @@
 
 .page {
   width: 100%;
+  min-height: calc(100vh - 487rem);
   margin-top: $nav-height-mobile;
 
-  @include flexCenteredColum();
-
-  // background-color: antiquewhite;
+  @include flexCenteredColum;
 
   @media (min-width: $break-point-desktop) {
     margin-top: $nav-height-tablet-desktop;

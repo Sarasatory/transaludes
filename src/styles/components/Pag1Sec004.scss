@@ -23,16 +23,10 @@
     padding: 40rem 24rem;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     gap: 40rem;
     flex-wrap: wrap;
-
-    @media (min-width: $break-point-tablet) {
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-    }
   }
 }

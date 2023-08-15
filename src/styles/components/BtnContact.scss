@@ -1,0 +1,21 @@
+@import '../core/Variables.scss';
+
+.btn-survey {
+  width: 256rem;
+  min-width: 230rem;
+  height: 56rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: $gradient-action-pink;
+  border-radius: 28rem;
+
+  transition: all 0.35s ease, background 0.35s ease;
+
+  &:hover {
+    cursor: pointer;
+    background: $gradient-action-pink-hover;
+  }
+}

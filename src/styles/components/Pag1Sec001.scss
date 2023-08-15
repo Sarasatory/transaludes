@@ -12,8 +12,6 @@
     @include flexCenteredColum();
     gap: 20rem;
 
-    // background-color: aquamarine;
-
     @media (min-width: $break-point-desktop) {
       width: 68%;
       padding: 100rem 0;

@@ -1,0 +1,36 @@
+@import '../core/Variables.scss';
+@import '../core/Global.scss';
+
+.p2s1 {
+  position: relative;
+  width: 100%;
+  padding: 40rem 32rem;
+
+  @include flexCenteredColum();
+
+  .max-container {
+    gap: 40rem;
+  }
+
+  &__little-container {
+    @include flexCenteredColum();
+    gap: 20rem;
+
+    @media (min-width: $break-point-desktop) {
+      width: 68%;
+      padding: 80rem 0;
+    }
+  }
+
+  &__cards {
+    width: 100%;
+    @include flexCenteredColum();
+    gap: 20rem;
+  }
+
+  @media (min-width: $break-point-desktop) {
+  }
+
+  @media (min-width: $break-point-tablet) {
+  }
+}

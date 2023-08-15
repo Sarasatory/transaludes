@@ -1,0 +1,54 @@
+{
+  "faq": [
+    {
+      "id": "0",
+      "question": "¿Qué cuestiones aborda la encuesta de Transaludes?",
+      "answer": "Es una encuesta online estatal que recoge información sobre la salud física, mental y sexual, discriminación y violencia, uso de servicios sanitarios y consumo de sustancias en personas trans y/o no binarias."
+    },
+    {
+      "id": "1",
+      "question": "¿Quiénes pueden completar la encuesta?",
+      "answer": "Todas las personas trans y/o no binarias de 15 años o más que viven en España, independientemente de que se haya realizado o se desee o no realizar cualquier proceso de transición."
+    },
+    {
+      "id": "2",
+      "question": "¿Las personas tienen que reconocerse abiertamente como trans o no binarias para completar la encuesta?",
+      "answer": "No, no es necesario estar \"fuera del armario\" ni viviendo como persona trans o no binaria."
+    },
+    {
+      "id": "3",
+      "question": "¿Quién lleva a cabo este estudio?",
+      "answer": "Está promovido por investigadores del Instituto de Salud Carlos III, Organismo Público de Investigación, en el que hay miembros de nuestra comunidad."
+    },
+    {
+      "id": "4",
+      "question": "¿Quién financia este estudio?",
+      "answer": "El Ministerio de Sanidad con fondos de la Unión Europea y el Ministerio de Ciencia e Innovación."
+    },
+    {
+      "id": "5",
+      "question": "¿Ha sido este estudio aprobado por un comité de ética?",
+      "answer": "Sí, ha sido aprobado por el comité de ética del Instituto de Salud Carlos III (CEI PI 44_2023)"
+    },
+    {
+      "id": "6",
+      "question": "¿La participación es voluntaria y anónima?",
+      "answer": "Sí, es voluntaria y totalmente anónima, puedes empezar a contestar y retirarte en cualquier momento. En ese caso, analizaremos la información que nos hayas proporcionado. No se preguntan datos personales que puedan identificarte. No se recoge la dirección IP del dispositivo, ni se instalan cookies."
+    },
+    {
+      "id": "7",
+      "question": "¿Cuánto tiempo lleva completar la encuesta?",
+      "answer": "Aproximadamente unos 30 minutos, aunque depende de las opciones de respuesta. Se contesta mucho más rápidamente en ordenador o tablet."
+    },
+    {
+      "id": "8",
+      "question": "Si no termino de contestar la encuesta ¿puedo terminarla en otro momento?",
+      "answer": "Sí, siempre que te conectes desde el mismo dispositivo y el mismo link desde el que accediste la primera vez.\nPor ejemplo, si accediste a través de la app de Instagram, tendrías que acceder otra vez desde ahí o si lo hiciste a través de un influencer, recuperar la historia o mensaje que viste."
+    },
+    {
+      "id": "9",
+      "question": "¿Qué se hará con los resultados del estudio?",
+      "answer": "Desde el equipo investigador se analizarán los datos y se difundirán en el ámbito científico, institucional, entidades comunitarias y activistas LGTBIQA+. Se elaborará un informe que se publicará en la página web de Transaludes como fase final de difusión."
+    }
+  ]
+}

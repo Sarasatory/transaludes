@@ -27,7 +27,12 @@
 @keyframes rotateFade {
   0% {
     transform: rotate(0deg);
-    background: url(../../assets/icons/btnLess.svg) no-repeat center center /
+    background: url(../../assets/icons/btnMoreHover.svg) no-repeat center center /
+      cover;
+  }
+  80% {
+    transform: rotate(90deg);
+    background: url(../../assets/icons/btnMoreHover.svg) no-repeat center center /
       cover;
   }
   100% {
@@ -40,7 +45,12 @@
 @keyframes rotateOpen {
   0% {
     transform: rotate(90deg);
-    background: url(../../assets/icons/btnMore.svg) no-repeat center center /
+    background: url(../../assets/icons/btnLessHover.svg) no-repeat center center /
+      cover;
+  }
+  80% {
+    transform: rotate(0deg);
+    background: url(../../assets/icons/btnLessHover.svg) no-repeat center center /
       cover;
   }
   100% {

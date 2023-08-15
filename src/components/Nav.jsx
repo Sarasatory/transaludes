@@ -2,7 +2,6 @@ import '../styles/components/Nav.scss';
 
 import LogoRectangle from './LogoRectangle';
 import BtnSurvey from './BtnSurvey';
-import BtnFaq from './BtnFaq';
 
 import {Link, useLocation} from 'react-router-dom';
 import {useEffect} from 'react';
@@ -133,7 +132,6 @@ const Nav = (props) => {
               </Link>
             </li>
           </ul>
-          <BtnFaq />
           <BtnSurvey />
         </nav>
       </div>

@@ -5,7 +5,7 @@ const BtnSurvey = () => {
     <>
       <a
         href='#'
-        className='btn-survey text-btn rainbow-3'
+        className='btn-survey text-btn'
       >
         Quiero participar
       </a>

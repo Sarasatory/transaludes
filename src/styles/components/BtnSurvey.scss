@@ -1,21 +1,28 @@
 @import '../core/Variables.scss';
 
-.btn-survey {
-  width: 256rem;
-  min-width: 230rem;
-  height: 56rem;
+.btn-contact {
+  width: min(340rem, 100%);
+  min-width: 250rem;
+  min-height: 48rem;
+  padding: 0 48rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background: $gradient-action-pink;
+  background: $gradient-action-blue;
   border-radius: 28rem;
 
   transition: all 0.35s ease, background 0.35s ease;
 
   &:hover {
     cursor: pointer;
-    background: $gradient-action-pink-hover;
+    background: $gradient-action-blue-hover;
+  }
+  &::before {
+    content: 'transaludes@isciii.es';
+    @media (min-width: $break-point-tablet) {
+      content: 'Escríbenos a transaludes@isciii.es';
+    }
   }
 }

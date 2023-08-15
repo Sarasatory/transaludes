@@ -1,0 +1,57 @@
+@import '../core/Variables.scss';
+@import '../core/Global.scss';
+
+.p2s1-card {
+  width: 100%;
+  min-width: 100%;
+
+  @include flexCenteredColum;
+
+  .little-container {
+    width: 100%;
+    min-width: 100%;
+    padding: 24rem;
+
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 66rem auto;
+
+    border: 1px solid var(--neutrals-soft-gray, #dee2e5);
+    background-color: $col-white-80;
+
+    border-radius: 20px;
+    box-shadow: 0px 2px 11px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  &__btn {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    @include flexLeftColumn;
+  }
+
+  &__question {
+    width: 100%;
+    min-height: 44rem;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+  }
+
+  &__answer {
+    padding-top: 16rem;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+
+    overflow: hidden;
+    transition: all 0.35s ease;
+  }
+}
+
+.faq-hidden {
+  max-height: 0;
+  padding: 0;
+
+  opacity: 0;
+}
