@@ -18,6 +18,7 @@ const Pag1Sec003 = () => {
             name={item.name}
             pronoun={item.pronoun}
             paragraph={item.paragraph}
+            laterality={item.laterality}
           />
         ))}
       </div>

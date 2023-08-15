@@ -36,6 +36,7 @@
 
   font-size: 40rem;
   letter-spacing: 0.4rem;
+  color: $col-text-strong;
   @media (min-width: $break_point_tablet) {
     font-size: 70rem;
   }
@@ -50,6 +51,7 @@
   font-size: 30rem;
   letter-spacing: 0;
   line-height: 40rem;
+  color: $col-text-strong;
   @media (min-width: $break_point_tablet) {
     font-size: 40rem;
   }
@@ -64,6 +66,7 @@
   font-size: 22rem;
   letter-spacing: 0;
   line-height: 36rem;
+  color: $col-text-strong;
   @media (min-width: $break-point-mobile) {
     font-size: 26rem;
   }
@@ -80,6 +83,7 @@
   font-size: 26rem;
   letter-spacing: 0;
   line-height: 36rem;
+  color: $col-text-strong;
   @media (min-width: $break_point_tablet) {
   }
   @media (min-width: $break_point_desktop) {
@@ -93,6 +97,7 @@
   font-size: 20rem;
   letter-spacing: 0;
   line-height: 28rem;
+  color: $col-text-strong;
   @media (min-width: $break_point_tablet) {
   }
   @media (min-width: $break_point_desktop) {
@@ -106,6 +111,7 @@
   font-size: 20rem;
   letter-spacing: 0;
   line-height: 28rem;
+  color: $col-text-strong;
   @media (min-width: $break_point_tablet) {
   }
   @media (min-width: $break_point_desktop) {
@@ -118,6 +124,7 @@
 
   font-size: 18rem;
   letter-spacing: 0;
+  color: $col-text-strong;
   @media (min-width: $break_point_tablet) {
   }
   @media (min-width: $break_point_desktop) {
@@ -130,6 +137,7 @@
   font-size: 18rem;
   letter-spacing: 0;
   line-height: 27rem;
+  color: $col-text-strong;
   @media (min-width: $break_point_tablet) {
   }
   @media (min-width: $break_point_desktop) {
@@ -143,6 +151,7 @@
   font-size: 17rem;
   letter-spacing: 0;
   line-height: 23rem; /// Satory
+  color: $col-text-body;
   @media (min-width: $break_point_tablet) {
     font-size: 18rem;
   }
@@ -156,6 +165,7 @@
 
   font-size: 13rem;
   letter-spacing: 0;
+  color: $col-text-body;
   @media (min-width: $break_point_tablet) {
   }
   @media (min-width: $break_point_desktop) {
@@ -169,6 +179,7 @@
   font-size: 16rem;
   letter-spacing: 0;
   line-height: 45rem;
+  color: $col-white;
   @media (min-width: $break_point_tablet) {
   }
   @media (min-width: $break_point_desktop) {
@@ -183,6 +194,7 @@
   letter-spacing: 1.5rem;
   line-height: 18rem;
   text-transform: uppercase;
+  color: $col-main-pink;
   @media (min-width: $break_point_tablet) {
   }
   @media (min-width: $break_point_desktop) {

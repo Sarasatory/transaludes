@@ -3,6 +3,7 @@ import '../styles/components/Footer.scss';
 import {Link} from 'react-router-dom';
 import LogoRectangle from './LogoRectangle';
 import ImageWithAspectRatio from '../services/ImageWithAspectRatio';
+import dataLogosFooter from '../data/dataLogosFooter.json';
 
 const Footer = () => {
   return (
@@ -26,30 +27,17 @@ const Footer = () => {
 
       <div className='footer__row002'>
         <div className='max-container'>
-          <a href='#'>
-            <ImageWithAspectRatio
-              imageUrl='src/assets/logos/ue.svg'
-              desiredHeight={48}
-            />
-          </a>
-          <a href='#'>
-            <ImageWithAspectRatio
-              imageUrl='src/assets/logos/prtr.svg'
-              desiredHeight={48}
-            />
-          </a>
-          <a href='#'>
-            <ImageWithAspectRatio
-              imageUrl='src/assets/logos/mds.svg'
-              desiredHeight={48}
-            />
-          </a>
-          <a href='#'>
-            <ImageWithAspectRatio
-              imageUrl='src/assets/logos/isciii.svg'
-              desiredHeight={48}
-            />
-          </a>
+          {dataLogosFooter.logos.map((item) => (
+            <a
+              href={item.url}
+              key='index'
+            >
+              <ImageWithAspectRatio
+                imageUrl={item.img}
+                desiredHeight={item.height}
+              />
+            </a>
+          ))}
         </div>
       </div>
 

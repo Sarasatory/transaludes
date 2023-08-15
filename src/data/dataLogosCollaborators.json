@@ -1,0 +1,28 @@
+{
+  "collaborators": [
+    {
+      "index": "0",
+      "url": "#",
+      "img": "src/assets/logos/ue.svg",
+      "height": "48"
+    },
+    {
+      "index": "1",
+      "url": "#",
+      "img": "src/assets/logos/prtr.svg",
+      "height": "48"
+    },
+    {
+      "index": "2",
+      "url": "#",
+      "img": "src/assets/logos/mds.svg",
+      "height": "48"
+    },
+    {
+      "index": "3",
+      "url": "#",
+      "img": "src/assets/logos/isciii.svg",
+      "height": "48"
+    }
+  ]
+}

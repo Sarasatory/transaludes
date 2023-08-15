@@ -117,6 +117,7 @@
     align-items: center;
     gap: 32rem;
 
+    color: $col-text-body;
     & li:hover {
       color: $col-main-blue;
     }
@@ -198,12 +199,6 @@
     background-repeat: no-repeat;
     background-size: 100% 3rem;
     background-position: center 90%;
-
-    & span {
-      // background-clip: text;
-      // background-image: $gradient-action-blue;
-      // color: transparent;
-    }
 
     @media (min-width: $break-point-desktop) {
       padding: 18rem 5rem;

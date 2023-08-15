@@ -3,7 +3,9 @@ import '../styles/components/P1S3Card.scss';
 
 const P1S3Card = (props) => {
   return (
-    <article className={`p1s3-card ${props.index}`}>
+    <article
+      className={`p1s3-card p1s3-card__${props.laterality} ${props.index}`}
+    >
       <div className='p1s3-card__img--circle-001 ta-center'>
         <div className='p1s3-card__img--circle-002 ta-center'>
           <div
@@ -11,7 +13,8 @@ const P1S3Card = (props) => {
           ></div>
         </div>
       </div>
-      <div className='text-container'>
+
+      <div className={`text-container text-container__${props.laterality}`}>
         <div className='p1s3-card__name text-h3-medium ta-center'>
           {props.name}
         </div>

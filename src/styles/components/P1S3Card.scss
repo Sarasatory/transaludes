@@ -5,29 +5,59 @@
   width: 100%;
 
   @include flexCenteredColum;
+
+  @media (min-width: 450px) and (max-width: $break-point-tablet) {
+    width: min(100%, 450rem);
+  }
+
+  @media (min-width: $break-point-tablet) {
+    display: flex;
+  }
+
+  @media (min-width: $break-point-desktop) {
+    max-width: min(33vw, 390rem);
+  }
+
   &__img--circle-001 {
-    width: 200rem;
-    height: 200rem;
+    z-index: 100;
+
+    min-width: 200rem;
+    min-height: 200rem;
 
     @include flexCenteredColum;
 
     background-color: $col--neutrals-soft-gray-20;
     border-radius: 50%;
+
+    @media (min-width: $break-point-desktop) {
+      min-width: 300rem;
+      min-height: 300rem;
+    }
   }
 
   &__img--circle-002 {
-    width: 170rem;
-    height: 170rem;
+    min-width: 170rem;
+    min-height: 170rem;
 
     background-color: $col--neutrals-soft-gray-80;
     border-radius: 50%;
 
     @include flexCenteredColum;
+
+    @media (min-width: $break-point-desktop) {
+      min-width: 250rem;
+      min-height: 250rem;
+    }
   }
 
   &__img--img {
-    width: 145rem;
-    height: 145rem;
+    min-width: 145rem;
+    min-height: 145rem;
+
+    @media (min-width: $break-point-desktop) {
+      min-width: 205rem;
+      min-height: 205rem;
+    }
   }
 
   &__img--img-0 {
@@ -55,8 +85,61 @@
       center / cover;
   }
 
+  .text-container {
+    width: 100%;
+    transform: translateY(-90rem);
+    padding: 110rem 32rem 40rem 32rem;
+    margin-bottom: -90rem;
+
+    @include flexCenteredColum;
+    gap: 14rem;
+
+    background-color: $col--neutrals-softest-background;
+
+    @media (min-width: 450px) and (max-width: $break-point-tablet) {
+      border-radius: 12rem;
+    }
+
+    @media (min-width: $break-point-tablet) and (max-width: $break-point-desktop) {
+      transform: translateY(0);
+      margin-bottom: 0;
+
+      @include flexLeftColumn;
+
+      border-radius: 12rem;
+
+      &__left {
+        padding: 40rem 32rem 40rem 82rem;
+        transform: translateX(-70rem);
+        margin-right: -70rem;
+      }
+
+      &__right {
+        padding: 40rem 82rem 40rem 32rem;
+        transform: translateX(70rem);
+        margin-left: -70rem;
+      }
+    }
+
+    @media (min-width: $break-point-desktop) {
+      min-height: 450rem;
+      border-radius: 12rem;
+    }
+  }
+
   @media (min-width: $break-point-tablet) {
   }
   @media (min-width: $break-point-desktop) {
+  }
+}
+
+.p1s3-card__left {
+  @media (min-width: $break-point-tablet) and (max-width: $break-point-desktop) {
+    flex-direction: row;
+  }
+}
+.p1s3-card__right {
+  @media (min-width: $break-point-tablet) and (max-width: $break-point-desktop) {
+    flex-direction: row-reverse;
   }
 }

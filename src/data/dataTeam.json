@@ -1,6 +1,7 @@
 {
   "team": [
     {
+      "laterality": "left",
       "img_id": "0",
       "img": "src/assets/icons/bullet000.svg",
       "name": "María José Belza Egozcue",
@@ -8,31 +9,35 @@
       "paragraph": "Investigadora principal del proyecto. Doctora en Salud Pública. Tiene una amplia experiencia en el diseño y ejecución de estudios centrados en las poblaciones más vulnerables a la infección por el VIH, muchas de ellas de difícil acceso. Además, participó en el equipo de la primera encuesta nacional sobre salud y hábitos sexuales en España."
     },
     {
+      "laterality": "right",
       "img_id": "1",
       "img": "src/assets/icons/bullet001.svg",
       "name": "Juan Miguel Guerras",
-      "pronoun": "Uso de (Él))",
+      "pronoun": "(Él)",
       "paragraph": "Doctor en Epidemiología y Salud Pública. Tiene una amplia experiencia en la ejecución de trabajos de campo de investigación, así como en el diseño de cuestionarios y en la programación de los mismos en diferentes plataformas online. Ha trabajado en el área de epidemiología del VIH y en las poblaciones más afectadas recientemente."
     },
     {
+      "laterality": "left",
       "img_id": "2",
       "img": "src/assets/icons/bullet002.svg",
       "name": "Paule González Recio",
-      "pronoun": "(Elle))",
+      "pronoun": "(Elle)",
       "paragraph": "Graduade en Medicina por la UCM y Derecho por la UNED. Máster en Salud Pública. Actualmente se está especializando y doctorando en Salud Pública. Su investigación se centra en la salud de disidencias sexuales y/o de género desde los determinantes sociales de la salud. Activista queer."
     },
     {
+      "laterality": "right",
       "img_id": "3",
       "img": "src/assets/icons/bullet003.svg",
       "name": "Édel Granda Viñuelas",
-      "pronoun": "(Él))",
+      "pronoun": "(Él)",
       "paragraph": "Graduado en Antropología Social y Cultural por la UCM y especializado en Antropología de Orientación Pública por la UAM. Sus futuras líneas de investigación son la antropología médica, cuerpos, sexualidades y subjetividad. Activista queer y transfeminista."
     },
     {
+      "laterality": "left",
       "img_id": "4",
       "img": "src/assets/icons/bullet003.svg",
       "name": "David Palma",
-      "pronoun": "(Él))",
+      "pronoun": "(Él)",
       "paragraph": "Médico especialista en Salud Pública, estudiante de doctorado en la Universidad de Maastricht. Actualmente trabaja en el Servicio de Epidemiología de la Agencia de Salud Pública de Barcelona (ASPB). Es el encargado de dirigir el programa de pruebas rápidas de VIH y otras ITS de la ASPB."
     }
   ]
