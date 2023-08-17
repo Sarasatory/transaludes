@@ -1,17 +1,8 @@
 import '../styles/components/Pag3Sec001.scss';
 import BtnContact from './BtnContact';
-import ParallaxEffect from './ParallaxEffect';
+import ParallaxEffect004 from './ParallaxEffect004';
 
 const Pag3Sec001 = () => {
-  const images_url = 'src/assets/images/dynamic-image-004';
-  const dynamic_image = [
-    `${images_url}/capa1.svg`,
-    `${images_url}/capa2.svg`,
-    `${images_url}/capa3.svg`,
-    `${images_url}/capa4.svg`,
-    `${images_url}/capa5.svg`,
-  ];
-
   return (
     <section className='p3s1'>
       <div className='max-container'>
@@ -28,7 +19,7 @@ const Pag3Sec001 = () => {
           </div>
           <div className='p3s1__grid--img'>
             <div className='p3s1__grid--img--size'>
-              <ParallaxEffect images={dynamic_image} />
+              <ParallaxEffect004 />
             </div>
           </div>
         </div>

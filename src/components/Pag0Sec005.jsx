@@ -1,16 +1,7 @@
 import '../styles/components/PagSecTextImg.scss';
-import ParallaxEffect from './ParallaxEffect';
+import ParallaxEffect003 from './ParallaxEffect003';
 
 const Pag0Sec005 = () => {
-  const images_url = 'src/assets/images/dynamic-image-003';
-  const dynamic_image = [
-    `${images_url}/capa1.svg`,
-    `${images_url}/capa2.svg`,
-    `${images_url}/capa3.svg`,
-    `${images_url}/capa4.svg`,
-    `${images_url}/capa5.svg`,
-  ];
-
   return (
     <section className='p0s5'>
       <div className='max-container'>
@@ -41,7 +32,7 @@ const Pag0Sec005 = () => {
             </ul>
           </div>
           <div className='p0s5__grid--img'>
-            <ParallaxEffect images={dynamic_image} />
+            <ParallaxEffect003 />
           </div>
         </div>
       </div>

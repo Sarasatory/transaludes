@@ -1,17 +1,8 @@
 import '../styles/components/PagSecTextImg.scss';
 import BtnSurvey from './BtnSurvey';
-import ParallaxEffect from './ParallaxEffect';
+import ParallaxEffect001 from './ParallaxEffect001';
 
 const Pag0Sec001 = () => {
-  const images_url = 'src/assets/images/dynamic-image-001';
-  const dynamic_image = [
-    `${images_url}/capa1.svg`,
-    `${images_url}/capa2.svg`,
-    `${images_url}/capa3.svg`,
-    `${images_url}/capa4.svg`,
-    `${images_url}/capa5.svg`,
-  ];
-
   return (
     <article className='p0s1'>
       <div className='max-container'>
@@ -44,7 +35,7 @@ const Pag0Sec001 = () => {
             <BtnSurvey />
           </div>
           <div className='p0s1__grid--img'>
-            <ParallaxEffect images={dynamic_image} />
+            <ParallaxEffect001 />
           </div>
         </div>
       </div>

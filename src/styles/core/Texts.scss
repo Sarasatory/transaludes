@@ -200,32 +200,3 @@
   @media (min-width: $break_point_desktop) {
   }
 }
-
-//
-// LISTAS
-//
-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 20rem;
-
-  & .list-li {
-    position: relative;
-    padding-left: 32rem;
-    list-style-type: none;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 2rem;
-      left: 0;
-
-      width: 16rem;
-      height: 16rem;
-      background-image: url(src/assets/icons/check-list.svg);
-      background-repeat: no-repeat;
-      background-position: left center;
-      background-size: 16px 16px;
-    }
-  }
-}
