@@ -1,5 +1,5 @@
 const Page404 = () => {
-  return <h1>PAGE 404</h1>;
+  return <h2>PAGE 404</h2>;
 };
 
 export default Page404;
