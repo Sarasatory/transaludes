@@ -2,7 +2,6 @@ import '../styles/components/Footer.scss';
 
 import {Link} from 'react-router-dom';
 import LogoRectangle from './LogoRectangle';
-import ImageWithAspectRatio from '../services/ImageWithAspectRatio';
 import dataLogosFooter from '../data/dataLogosFooter.json';
 
 const Footer = () => {
@@ -12,13 +11,25 @@ const Footer = () => {
         <div className='max-container'>
           <LogoRectangle className='footer__row001__logo-rectangle' />
           <div className='footer__row001__rrss'>
-            <a href='#'>
+            <a
+              href='https://www.facebook.com/transaludes'
+              target='_blank'
+              title='Facebook de Transaludes'
+            >
               <div className='footer-icon footer__row001__rrss--fb'></div>
             </a>
-            <a href='#'>
+            <a
+              href='https://www.instagram.com/transaludes/'
+              target='_blank'
+              title='Instagram de Transaludes'
+            >
               <div className='footer-icon footer__row001__rrss--ig'></div>
             </a>
-            <a href='#'>
+            <a
+              href='https://twitter.com/transaludes'
+              target='_blank'
+              title='Twitter de Transaludes'
+            >
               <div className='footer-icon footer__row001__rrss--tw'></div>
             </a>
           </div>
@@ -31,11 +42,10 @@ const Footer = () => {
             <a
               href={item.url}
               key='index'
+              target='_blank'
+              rel='noreferrer'
             >
-              <ImageWithAspectRatio
-                imageUrl={item.img}
-                desiredHeight={item.height}
-              />
+              <div className={`image-service${item.id}`}></div>
             </a>
           ))}
         </div>
@@ -45,19 +55,19 @@ const Footer = () => {
         <div className='max-container'>
           <ul>
             <li>
-              <Link to='Legal'>
+              <Link to='/Legal'>
                 <span className='text-p3'>Aviso legal</span>
               </Link>
             </li>
             <span className='dot'>·</span>
             <li>
-              <Link to='Privacy'>
+              <Link to='/Privacy'>
                 <span className='text-p3'>Política de privacidad</span>
               </Link>
             </li>
             <span className='dot'>·</span>
             <li>
-              <Link to='Cookies'>
+              <Link to='/Cookies'>
                 <span className='text-p3'>Política de cookies</span>
               </Link>
             </li>
@@ -65,9 +75,28 @@ const Footer = () => {
         </div>
       </div>
 
+      <div className='footer__row003'>
+        <div className='max-container'>
+          <div className='footer__row004--item001 text-p3'>
+            © Transaludes 2023.
+          </div>
+        </div>
+      </div>
+
       <div className='footer__row004'>
         <div className='max-container'>
-          <span className='text-p3'>© Transaludes 2023.</span>
+          <a
+            className='footer__row004--item002 text-p3 a-sub-queer'
+            href='https://satory.es'
+            target='_blank'
+            title='Satory Asensio - Web Developer'
+          >
+            <strong className='a-sub-queer-001'>Hecho con</strong>{' '}
+            <div className='img-nbh-bg-white'>
+              <div className='img-nbh'></div>
+            </div>
+            <strong className='a-sub-queer-002'>por Satory</strong>
+          </a>
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 import '../styles/components/Pag1Sec004.scss';
-import ImageWithAspectRatio from '../services/ImageWithAspectRatio';
+
 import dataLogosCollaborators from '../data/dataLogosCollaborators.json';
 
 const Pag1Sec004 = () => {
@@ -20,13 +20,13 @@ const Pag1Sec004 = () => {
         <div className='p1s4__logos'>
           {dataLogosCollaborators.collaborators.map((item) => (
             <a
-              href={item.url}
               key='index'
+              target='_blank'
+              rel='noreferrer'
             >
-              <ImageWithAspectRatio
-                imageUrl={item.img}
-                desiredHeight={item.height}
-              />
+              <div
+                className={`image-collaborators image-collaborators${item.id}`}
+              ></div>
             </a>
           ))}
         </div>

@@ -27,6 +27,7 @@ $col-text-strong: #403764;
 $col-main-blue: #2ba3d9;
 $col-main-blue-hover: #3864ff;
 $col-main-pink: #ea579b;
+$col-main-pink-soft: rgba(234, 87, 155, 0.5);
 $col-main-purple: #825da3;
 $col-main-yellow: #fdcd4c;
 
@@ -47,6 +48,11 @@ $gradient-logo-pink: radial-gradient(
   131.93% 103.92% at 70.87% 28.72%,
   #ea579b 0%,
   #f5a8b8 100%
+);
+$gradient-logo-pink-soft: radial-gradient(
+  131.93% 103.92% at 70.87% 28.72%,
+  rgba(234, 87, 155, 0.4) 0%,
+  rgba(245, 168, 184, 0.4) 100%
 );
 $gradient-logo-purple: radial-gradient(
   131.87% 103.74% at 70.89% 28.45%,
@@ -72,6 +78,20 @@ $gradient-action-blue-hover: linear-gradient(
   #271884 68.23%
 );
 
+$gradient-lgtbiqa: linear-gradient(
+  to right,
+  #d9393c,
+  #ed7e1e,
+  #f8b427,
+  #5bae42,
+  #0189c0,
+  #7e347f
+);
+
+$gradient-lgtbiqa-001: linear-gradient(to right, #d9393c, #ed7e1e, #f8b427);
+
+$gradient-lgtbiqa-002: linear-gradient(to right, #5bae42, #0189c0, #7e347f);
+
 // SIZES
 $break-point-mobile: 390px;
 $break-point-tablet: 768px;
@@ -86,4 +106,4 @@ $width-tablet: calc(100% - 80rem);
 $width-desktop: calc(100% - 240rem);
 
 $nav-height-mobile: 80rem;
-$nav-height-tablet-desktop: 100rem;
+$nav-height-desktop: 100rem;

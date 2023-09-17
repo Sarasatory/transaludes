@@ -18,6 +18,55 @@
   color: transparent;
 }
 
+.a-sub {
+  color: $col-main-pink;
+
+  text-decoration: none;
+  padding: 0 4rem;
+
+  display: inline-block;
+
+  &:hover {
+    background-image: $gradient-logo-pink;
+  }
+
+  @media (min-width: $break_point_tablet) {
+    background-image: $gradient-logo-pink-soft;
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+  }
+}
+
+.a-sub-queer:hover {
+  padding: 0 4rem;
+  background-image: $gradient-lgtbiqa;
+  background-repeat: no-repeat;
+  background-size: 100% 1.5rem;
+  background-position: 0 100%;
+}
+
+.a-sub-queer-001 {
+  padding-right: 4rem;
+  background-image: $gradient-lgtbiqa-001;
+
+  background-clip: text;
+  color: transparent;
+}
+
+.a-sub-queer-002 {
+  padding-left: 4rem;
+  background-image: $gradient-lgtbiqa-002;
+
+  background-clip: text;
+  color: transparent;
+}
+
+::selection {
+  background: $col-main-pink-soft;
+  color: #fff;
+}
+
 .ta-left {
   text-align: left;
 }
@@ -37,10 +86,18 @@
   font-size: 40rem;
   letter-spacing: 0.4rem;
   color: $col-text-strong;
+
+  &--404 {
+    font-size: 140rem;
+    @media (min-width: $break_point_tablet) {
+      font-size: 180rem;
+    }
+    @media (min-width: $break_point_desktop) {
+      font-size: 300rem;
+    }
+  }
   @media (min-width: $break_point_tablet) {
     font-size: 70rem;
-  }
-  @media (min-width: $break_point_desktop) {
   }
 }
 
@@ -129,6 +186,10 @@
   }
   @media (min-width: $break_point_desktop) {
   }
+
+  &--cookies {
+    font-size: 24rem;
+  }
 }
 
 .text-p1-regular {
@@ -141,6 +202,10 @@
   @media (min-width: $break_point_tablet) {
   }
   @media (min-width: $break_point_desktop) {
+  }
+
+  &--cookies {
+    font-size: 32rem;
   }
 }
 

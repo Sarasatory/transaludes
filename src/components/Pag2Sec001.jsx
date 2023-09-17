@@ -9,7 +9,7 @@ const Pag2Sec001 = () => {
         <div className='p2s1__little-container'>
           <h1 className='text-h1 ta-center'>Preguntas frecuentes</h1>
           <p className='text-p1-regular ta-center'>
-            TranSaludes es un proyecto liderado por un equipo de investigadores
+            Transaludes es un proyecto liderado por un equipo de investigadores
             del Instituto de Salud Carlos III.
           </p>
         </div>

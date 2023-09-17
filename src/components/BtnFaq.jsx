@@ -1,18 +1,8 @@
 import '../styles/components/BtnFaq.scss';
-import {useState} from 'react';
 
-const BtnFaq = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleFAQ = () => {
-    setIsOpen(!isOpen);
-  };
-
+const BtnFaq = (props) => {
   return (
-    <button
-      className={`btn-faq ${isOpen ? 'open' : ''}`}
-      onClick={toggleFAQ}
-    ></button>
+    <button className={`btn-faq ${props.isOpenBtn ? 'open' : ''}`}></button>
   );
 };
 

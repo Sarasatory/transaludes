@@ -5,11 +5,9 @@ const P0S4Card = (props) => {
   return (
     <section className='p0s4-card'>
       <div className='p0s4-card__title'>
-        <img
-          className='p0s4-card__title--icon'
-          src={props.img}
-          alt={props.title}
-        />
+        <div
+          className={`p0s4-card__title--icon p0s4-card__title--icon${props.id}`}
+        ></div>
         <div className='p0s4-card__title--text text-h3-medium'>
           {props.title}
         </div>

@@ -5,8 +5,8 @@
   min-width: 44rem;
   min-height: 44rem;
 
-  animation: rotateFade 0.7s ease forwards;
-
+  animation: rotateFade 0.35s ease forwards;
+  transition: all 0.35s ease;
   &:hover {
     cursor: pointer;
     background: url(../../assets/icons/btnMoreHover.svg) no-repeat center center /
@@ -14,8 +14,8 @@
   }
 
   &.open {
-    animation: rotateOpen 0.7s ease forwards;
-
+    animation: rotateOpen 0.35s ease forwards;
+    transition: all 0.35s ease;
     &:hover {
       cursor: pointer;
       background: url(../../assets/icons/btnLessHover.svg) no-repeat center
@@ -27,14 +27,10 @@
 @keyframes rotateFade {
   0% {
     transform: rotate(0deg);
-    background: url(../../assets/icons/btnMoreHover.svg) no-repeat center center /
+    background: url(../../assets/icons/btnLess.svg) no-repeat center center /
       cover;
   }
-  80% {
-    transform: rotate(90deg);
-    background: url(../../assets/icons/btnMoreHover.svg) no-repeat center center /
-      cover;
-  }
+
   100% {
     transform: rotate(90deg);
     background: url(../../assets/icons/btnMore.svg) no-repeat center center /
@@ -45,14 +41,10 @@
 @keyframes rotateOpen {
   0% {
     transform: rotate(90deg);
-    background: url(../../assets/icons/btnLessHover.svg) no-repeat center center /
+    background: url(../../assets/icons/btnMore.svg) no-repeat center center /
       cover;
   }
-  80% {
-    transform: rotate(0deg);
-    background: url(../../assets/icons/btnLessHover.svg) no-repeat center center /
-      cover;
-  }
+
   100% {
     transform: rotate(0deg);
     background: url(../../assets/icons/btnLess.svg) no-repeat center center /

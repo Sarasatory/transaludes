@@ -9,7 +9,7 @@ const Pag0Sec003 = () => {
           <div className='p0s3__grid--text'>
             <h2 className='text-h2'>¿Qué es el estudio Transaludes?</h2>
             <p className='text-p2'>
-              TranSaludes es un estudio de un Organismo Público de Investigación
+              Transaludes es un estudio de un Organismo Público de Investigación
               dirigido a conocer el estado de salud de las personas trans y/o no
               binarias en España.
             </p>

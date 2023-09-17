@@ -9,18 +9,18 @@ const Pag1Sec003 = () => {
         <h2 className='p1s3__title text-h2 ta-center'>
           Equipo de investigación
         </h2>
-      </div>
-      <div className='p1s3__cards'>
-        {dataTeam.team.map((item, index) => (
-          <P1S3Card
-            key={index}
-            img_id={item.img_id}
-            name={item.name}
-            pronoun={item.pronoun}
-            paragraph={item.paragraph}
-            laterality={item.laterality}
-          />
-        ))}
+        <div className='p1s3__cards'>
+          {dataTeam.team.map((item, index) => (
+            <P1S3Card
+              key={index}
+              img_id={item.img_id}
+              name={item.name}
+              pronoun={item.pronoun}
+              paragraph={item.paragraph}
+              laterality={item.laterality}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

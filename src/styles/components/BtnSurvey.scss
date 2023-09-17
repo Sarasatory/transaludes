@@ -15,14 +15,14 @@
 
   transition: all 0.35s ease, background 0.35s ease;
 
-  &:hover {
-    cursor: pointer;
-    background: $gradient-action-blue-hover;
-  }
   &::before {
     content: 'transaludes@isciii.es';
     @media (min-width: $break-point-tablet) {
       content: 'Escríbenos a transaludes@isciii.es';
     }
+  }
+  &:hover {
+    cursor: pointer;
+    background: $gradient-action-blue-hover;
   }
 }

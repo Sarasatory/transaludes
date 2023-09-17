@@ -41,5 +41,25 @@
         height: 70rem;
       }
     }
+
+    &--icon0 {
+      background: url(../../assets/icons/bullet000.svg) no-repeat center center /
+        contain;
+    }
+
+    &--icon1 {
+      background: url(../../assets/icons/bullet001.svg) no-repeat center center /
+        contain;
+    }
+
+    &--icon2 {
+      background: url(../../assets/icons/bullet002.svg) no-repeat center center /
+        contain;
+    }
+
+    &--icon3 {
+      background: url(../../assets/icons/bullet003.svg) no-repeat center center /
+        contain;
+    }
   }
 }

@@ -30,8 +30,6 @@
   }
 
   &__logo {
-    height: 100rem;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,6 +49,9 @@
 
     &:hover {
       cursor: pointer;
+
+      background: url(../../assets/icons/menuBarsHover.svg) no-repeat center
+        center / cover;
     }
   }
 }
@@ -60,6 +61,7 @@
 
   width: 100%;
   height: 100vh;
+  max-height: 100vh;
   padding: 24rem;
 
   display: flex;
@@ -68,9 +70,13 @@
   align-items: center;
   gap: 32rem;
 
+  @media only screen and (max-width: 1000px) and (orientation: landscape) {
+    gap: 0;
+  }
+
   @media (min-width: $break-point-desktop) {
-    height: $nav-height-tablet-desktop;
-    min-height: $nav-height-tablet-desktop;
+    height: $nav-height-desktop;
+    min-height: $nav-height-desktop;
     padding: 0 24rem;
 
     display: flex;
@@ -92,6 +98,9 @@
 
     &:hover {
       cursor: pointer;
+
+      background: url(../../assets/icons/menuCloseHover.svg) no-repeat center
+        center / cover;
     }
 
     @media (min-width: $break-point-desktop) {
@@ -101,6 +110,13 @@
 
   &__logo-rectangle {
     margin: 100rem 0 60rem 0;
+
+    @media only screen and (max-width: 1000px) and (orientation: landscape) {
+      position: absolute;
+      top: 24rem;
+      left: 24rem;
+      margin: 0;
+    }
 
     @media (min-width: $break-point-desktop) {
       margin: 0;
@@ -122,71 +138,29 @@
       color: $col-main-blue;
     }
 
+    @media only screen and (max-width: 1000px) and (orientation: landscape) {
+      gap: 0;
+      margin: 20rem 0;
+    }
+
     @media (min-width: $break-point-desktop) {
       margin-bottom: 0;
       flex-direction: row;
       justify-content: flex-end;
       gap: 22rem;
     }
-
-    @media (min-width: $break-point-desktop) {
-    }
   }
 
   &.closed {
     display: none;
 
-    animation-name: closed-nav;
-    animation-duration: 0.35s;
-    animation-direction: normal;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
     @media (min-width: $break-point-desktop) {
       display: flex;
-
-      animation: none;
-    }
-  }
-
-  @keyframes closed-nav {
-    0% {
-      opacity: 100;
-      display: flex;
-    }
-
-    100% {
-      opacity: 0;
-      display: none;
     }
   }
 
   &.open {
     display: flex;
-
-    animation-name: open-nav;
-    animation-duration: 0.35s;
-    animation-direction: normal;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
-    @media (min-width: $break-point-desktop) {
-      animation: none;
-    }
-  }
-
-  @keyframes open-nav {
-    0% {
-      opacity: 0;
-      display: none;
-    }
-
-    100% {
-      opacity: 100;
-      display: flex;
-    }
   }
 
   .selected {
@@ -199,6 +173,10 @@
     background-repeat: no-repeat;
     background-size: 100% 3rem;
     background-position: center 90%;
+
+    @media only screen and (max-width: 1000px) and (orientation: landscape) {
+      background-position: center 65%;
+    }
 
     @media (min-width: $break-point-desktop) {
       padding: 18rem 5rem;

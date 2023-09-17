@@ -9,6 +9,6 @@
   @include flexCenteredColum;
 
   @media (min-width: $break-point-desktop) {
-    margin-top: $nav-height-tablet-desktop;
+    margin-top: $nav-height-desktop;
   }
 }

@@ -82,19 +82,6 @@ const Nav = (props) => {
             </li>
           </ul>
           <ul className='nav__menu'>
-            {/* {dataMenu.menu.map((item, index) => (
-              <li
-                key={index}
-                id={index}
-                className={`text-p1-regular ${props.statusMenu00}${index}`}
-                onClick={handleClick}
-              >
-                <Link to={item.route}>
-                  <span>{item.text}</span>
-                </Link>
-              </li>
-            ))} */}
-
             <li
               id='0'
               className={`text-p1-regular ${props.statusMenu001}`}

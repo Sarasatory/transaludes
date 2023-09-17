@@ -1,28 +1,28 @@
 {
   "logos": [
     {
-      "index": "0",
-      "url": "#",
+      "id": "0",
+      "url": "https://commission.europa.eu/index_es",
       "img": "src/assets/logos/ue.svg",
-      "height": "48"
+      "height": "70"
     },
     {
-      "index": "1",
-      "url": "#",
+      "id": "1",
+      "url": "https://planderecuperacion.gob.es/",
       "img": "src/assets/logos/prtr.svg",
-      "height": "48"
+      "height": "70"
     },
     {
-      "index": "2",
-      "url": "#",
+      "id": "2",
+      "url": "https://pnsd.sanidad.gob.es/",
       "img": "src/assets/logos/mds.svg",
-      "height": "48"
+      "height": "70"
     },
     {
-      "index": "3",
-      "url": "#",
+      "id": "3",
+      "url": "https://www.isciii.es/",
       "img": "src/assets/logos/isciii.svg",
-      "height": "48"
+      "height": "70"
     }
   ]
 }

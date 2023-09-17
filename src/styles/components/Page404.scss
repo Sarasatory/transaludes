@@ -1,0 +1,84 @@
+@import '../core/Variables.scss';
+@import '../core/Global.scss';
+
+.page404 {
+  position: relative;
+  width: 100%;
+  margin-top: $nav-height-mobile;
+
+  @include flexCenteredColum;
+
+  @media (min-width: $break-point-desktop) {
+    margin-top: $nav-height-desktop;
+  }
+
+  .text-container {
+    position: absolute;
+    top: $nav-height-mobile;
+    width: 100%;
+    height: calc(40vh - $nav-height-mobile);
+    padding: 32rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+
+    @media (min-width: $break-point-tablet) {
+      height: calc(30vh - $nav-height-mobile);
+    }
+
+    @media (min-width: $break-point-desktop) {
+      height: calc(30vh - $nav-height-desktop);
+    }
+  }
+
+  .earth {
+    width: 100%;
+
+    height: calc(100vh - $nav-height-mobile);
+
+    overflow: hidden;
+
+    &__bg {
+      position: relative;
+      top: 60vh;
+      width: 100%;
+      height: max(100vw, 550rem);
+
+      background: url(../../assets/images/Earth.svg) no-repeat center center /
+        contain;
+      transition: all 2s ease;
+      transform: rotate(0deg);
+
+      @media (min-width: $break-point-tablet) {
+        top: 50vh;
+      }
+
+      @media (min-width: $break-point-desktop) {
+        top: 45vh;
+      }
+
+      &:hover {
+        transition: all 2s ease;
+        transition-delay: 500ms;
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}
+
+.rotate0 {
+  width: 100%;
+  position: absolute;
+  top: -100rem;
+}
+
+.rotate180 {
+  width: 100%;
+  position: absolute;
+  bottom: -100rem;
+
+  transform: rotate(180deg);
+}

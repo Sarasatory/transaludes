@@ -11,7 +11,7 @@ const Pag3Sec001 = () => {
             <h1 className='text-h1'>Contacto</h1>
             <p className='text-p1-regular'>
               ¿Quieres hacernos alguna pregunta? ¿Quieres que te mantengamos
-              actualizado/a/e sobre TranSaludes? ¿Te gustaría colaborar de
+              actualizado/a/e sobre Transaludes? ¿Te gustaría colaborar de
               alguna manera?
             </p>
             <p className='text-p1-medium'>¡Tú lo haces posible!</p>

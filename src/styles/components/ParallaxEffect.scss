@@ -3,10 +3,8 @@
 .parallax-container {
   width: 100%;
   padding-bottom: 100%;
-  overflow: hidden;
-  position: relative;
 
-  // border: 1rem solid black;
+  position: relative;
 
   @media (min-width: $break-point-desktop) {
     width: 80%;

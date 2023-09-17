@@ -4,8 +4,9 @@ const BtnSurvey = () => {
   return (
     <>
       <a
-        href='#'
+        href='https://es.research.net/r/transaludes_web'
         className='btn-survey text-btn'
+        target='_blank'
       >
         Quiero participar
       </a>

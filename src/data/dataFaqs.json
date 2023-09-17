@@ -2,13 +2,13 @@
   "faq": [
     {
       "id": "0",
-      "question": "¿Qué cuestiones aborda la encuesta de Transaludes?",
+      "question": "¿Qué temas aborda el estudio Transaludes?",
       "answer": "Es una encuesta online estatal que recoge información sobre la salud física, mental y sexual, discriminación y violencia, uso de servicios sanitarios y consumo de sustancias en personas trans y/o no binarias."
     },
     {
       "id": "1",
-      "question": "¿Quiénes pueden completar la encuesta?",
-      "answer": "Todas las personas trans y/o no binarias de 15 años o más que viven en España, independientemente de que se haya realizado o se desee o no realizar cualquier proceso de transición."
+      "question": "¿Quién puede participar?",
+      "answer": "Toda persona trans y/o no binaria de 15 años o más que viva en España, independientemente de que se haya realizado o se desee o no realizar cualquier proceso de transición"
     },
     {
       "id": "2",

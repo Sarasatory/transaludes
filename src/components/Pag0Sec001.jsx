@@ -26,7 +26,7 @@ const Pag0Sec001 = () => {
               </li>
               <li className='list-li text-p2'>
                 Puedes guardarla y continuar en otro momento desde el mismo
-                dispositivo.
+                dispositivo y el mismo link.
               </li>
               <li className='list-li text-p2'>
                 Mejor desde ordenador o tablet.

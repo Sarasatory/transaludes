@@ -12,7 +12,7 @@ const Pag0Sec004 = () => {
           {dataCards.cards.map((item, index) => (
             <P0S4Card
               key={index}
-              img={item.img}
+              id={item.id}
               title={item.title}
               paragraph={item.paragraph}
             />

@@ -126,8 +126,52 @@
       width: 100%;
       padding: 16rem;
 
-      @include flexLeftColumn;
+      @include flexCenteredRow;
+      gap: 12rem;
     }
+
+    &--item001 {
+      @include flexCenteredRow;
+    }
+
+    &--item002 {
+      @include flexCenteredRow;
+      gap: 4rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.img-nbh-bg-white {
+  width: 30rem;
+  height: 24rem;
+  background: $col-white;
+}
+
+.img-nbh {
+  width: 30rem;
+  height: 24rem;
+
+  background: url(../../assets/icons/lgtbiqa-h.svg) no-repeat center center /
+    contain;
+
+  &:hover {
+    animation: latido 1s infinite;
+  }
+}
+
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -139,17 +183,30 @@
 }
 
 .image-service0 {
-  background: url(src/assets/logos/ue.svg) no-repeat center center / contain;
+  width: min(80vw, 294rem);
+  height: 70rem;
+
+  background: url(../../assets/logos/ue.svg) no-repeat center center / contain;
 }
 
 .image-service1 {
-  background: url(src/assets/logos/prtr.svg) no-repeat center center / contain;
+  width: min(80vw, 349rem);
+  height: 70rem;
+
+  background: url(../../assets/logos/prtr.svg) no-repeat center center / contain;
 }
 
 .image-service2 {
-  background: url(src/assets/logos/mds.svg) no-repeat center center / contain;
+  width: min(80vw, 347rem);
+  height: 70rem;
+
+  background: url(../../assets/logos/mds.svg) no-repeat center center / contain;
 }
 
 .image-service3 {
-  background: url(src/assets/logos/isciii.svg) no-repeat center center / contain;
+  width: min(80vw, 425rem);
+  height: 70rem;
+
+  background: url(../../assets/logos/isciii.svg) no-repeat center center /
+    contain;
 }

@@ -1,116 +1,97 @@
 {
   "collaborators": [
     {
-      "index": "0",
-      "url": "#",
+      "id": "0",
       "img": "src/assets/logos/collaborators/alas.png",
       "height": "100"
     },
     {
-      "index": "1",
-      "url": "#",
+      "id": "1",
       "img": "src/assets/logos/collaborators/apoyo_positivo.png",
       "height": "100"
     },
     {
-      "index": "2",
-      "url": "#",
+      "id": "2",
       "img": "src/assets/logos/collaborators/atc.png",
       "height": "100"
     },
     {
-      "index": "3",
-      "url": "#",
+      "id": "3",
       "img": "src/assets/logos/collaborators/balears_diversa.png",
       "height": "100"
     },
     {
-      "index": "4",
-      "url": "#",
+      "id": "4",
       "img": "src/assets/logos/collaborators/cesida.png",
       "height": "100"
     },
     {
-      "index": "5",
-      "url": "#",
+      "id": "5",
       "img": "src/assets/logos/collaborators/chrysallis.png",
       "height": "100"
     },
     {
-      "index": "6",
-      "url": "#",
+      "id": "6",
       "img": "src/assets/logos/collaborators/cogam.png",
       "height": "100"
     },
     {
-      "index": "7",
-      "url": "#",
+      "id": "7",
       "img": "src/assets/logos/collaborators/dekumas_lbt.png",
       "height": "100"
     },
     {
-      "index": "8",
-      "url": "#",
+      "id": "8",
       "img": "src/assets/logos/collaborators/despertrans.png",
       "height": "100"
     },
     {
-      "index": "9",
-      "url": "#",
+      "id": "9",
       "img": "src/assets/logos/collaborators/espacio_alere.png",
       "height": "100"
     },
     {
-      "index": "10",
-      "url": "#",
+      "id": "10",
       "img": "src/assets/logos/collaborators/euforia.png",
       "height": "100"
     },
     {
-      "index": "11",
-      "url": "#",
+      "id": "11",
       "img": "src/assets/logos/collaborators/fundacion_26dic.png",
       "height": "100"
     },
     {
-      "index": "12",
-      "url": "#",
+      "id": "12",
       "img": "src/assets/logos/collaborators/iguales.png",
       "height": "100"
     },
     {
-      "index": "13",
-      "url": "#",
+      "id": "13",
       "img": "src/assets/logos/collaborators/loratuz_lotu.png",
       "height": "100"
     },
     {
-      "index": "14",
-      "url": "#",
+      "id": "14",
       "img": "src/assets/logos/collaborators/no_binaries_espana.png",
       "height": "100"
     },
     {
-      "index": "15",
-      "url": "#",
+      "id": "15",
       "img": "src/assets/logos/collaborators/plural.png",
       "height": "100"
     },
     {
-      "index": "16",
-      "url": "#",
+      "id": "16",
       "img": "src/assets/logos/collaborators/transboys.png",
       "height": "100"
     },
     {
-      "index": "17",
-      "url": "#",
+      "id": "17",
       "img": "src/assets/logos/collaborators/transwomen_canarias.png",
       "height": "100"
     },
     {
-      "index": "18",
-      "url": "#",
+      "id": "18",
       "img": "src/assets/logos/collaborators/xega_astur.png",
       "height": "100"
     }

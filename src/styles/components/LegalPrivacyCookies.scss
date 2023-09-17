@@ -1,0 +1,38 @@
+@import '../core/Variables.scss';
+@import '../core/Global.scss';
+
+.lpc {
+  width: 100%;
+  min-height: calc(100vh - 487rem);
+  margin-top: $nav-height-mobile;
+  padding: 40rem 32rem;
+
+  @include flexCenteredColum;
+
+  @media (min-width: $break-point-desktop) {
+    margin-top: $nav-height-desktop;
+  }
+
+  .max-container {
+    gap: 20rem;
+    width: 100%;
+    padding: 0 16rem 40rem 16rem;
+
+    & p {
+      overflow-wrap: break-word;
+      hyphens: auto;
+    }
+    & .text-h1 {
+      padding: 40rem;
+    }
+  }
+  &__text-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    &__text-container--line {
+    }
+  }
+}
