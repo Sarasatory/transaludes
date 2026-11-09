@@ -2,127 +2,83 @@ import '../styles/components/Nav.scss';
 
 import LogoRectangle from './LogoRectangle';
 import BtnResults from './BtnResults';
+import BtnDownloads from './BtnDownloads';
 
 import {Link, useLocation} from 'react-router-dom';
-import {useEffect} from 'react';
 
 import dataMenu from '../data/dataMenu.json';
 
-const Nav = (props) => {
-  const location = useLocation();
+const Nav = ({
+  visibility,
+  visibilityNav,
+  changeVisibilityBtn,
+  changeVisibilityNav,
+  modalVisible,
+  funShowModal,
+  funHideModal,
+}) => {
+  const {pathname} = useLocation();
 
-  useEffect(() => {
-    const pathname = location.pathname;
-
-    if (pathname === '/' || pathname === '') {
-      props.setStatusMenu001('selected');
-      props.setStatusMenu002('no-selected');
-      props.setStatusMenu003('no-selected');
-      props.setStatusMenu004('no-selected');
-    } else if (pathname === '/Page1') {
-      props.setStatusMenu001('no-selected');
-      props.setStatusMenu002('selected');
-      props.setStatusMenu003('no-selected');
-      props.setStatusMenu004('no-selected');
-    } else if (pathname === '/Page2') {
-      props.setStatusMenu001('no-selected');
-      props.setStatusMenu002('no-selected');
-      props.setStatusMenu003('selected');
-      props.setStatusMenu004('no-selected');
-    } else if (pathname === '/Page3') {
-      props.setStatusMenu001('no-selected');
-      props.setStatusMenu002('no-selected');
-      props.setStatusMenu003('no-selected');
-      props.setStatusMenu004('selected');
-    } else {
-      props.setStatusMenu001('');
-      props.setStatusMenu002('');
-      props.setStatusMenu003('');
-      props.setStatusMenu004('');
-    }
-  }, [location]);
-
-  const handleClick = () => {
-    props.changeVisibilityNav();
+  // Enlace activo: 'selected' en la sección actual, 'no-selected' en el resto.
+  // En rutas que no son del menú (Legal, Privacy, Cookies, 404) ninguno se marca.
+  const isMenuRoute = dataMenu.menu.some((item) => item.route === pathname);
+  const statusMenu = (route) => {
+    if (!isMenuRoute) return '';
+    return route === pathname ? 'selected' : 'no-selected';
   };
 
   return (
     <section className='section-nav'>
       <div className='max-container'>
-        <div className={`nav-mobile ${props.visibility}`}>
+        <div className={`nav-mobile ${visibility}`}>
           <ul className='nav-mobile__logo'>
-            <li
-              id='0'
-              onClick={handleClick}
-            >
+            <li onClick={changeVisibilityNav}>
               <LogoRectangle />
             </li>
           </ul>
 
           <div
-            className={`nav-mobile__icon-bars ${props.visibility}`}
-            onClick={props.changeVisibilityBtn}
+            className={`nav-mobile__icon-bars ${visibility}`}
+            onClick={changeVisibilityBtn}
           ></div>
         </div>
 
-        <nav
-          className={`nav ${props.visibilityNav}`}
-          onLoad={handleClick}
-        >
+        <nav className={`nav ${visibilityNav}`}>
           <div
             className='nav__icon-close'
-            onClick={props.changeVisibilityNav}
+            onClick={changeVisibilityNav}
           ></div>
           <ul className='nav__logo-rectangle'>
-            <li
-              id='0'
-              onClick={handleClick}
-            >
+            <li onClick={changeVisibilityNav}>
               <LogoRectangle />
             </li>
           </ul>
           <ul className='nav__menu'>
-            <li
-              id='0'
-              className={`text-p1-regular ${props.statusMenu001}`}
-              onClick={handleClick}
-            >
-              <Link to={dataMenu.menu[0].route}>
-                <span>{dataMenu.menu[0].text}</span>
-              </Link>
-            </li>
-            <li
-              id='1'
-              className={`text-p1-regular ${props.statusMenu002}`}
-              onClick={handleClick}
-            >
-              <Link to={dataMenu.menu[1].route}>
-                <span>{dataMenu.menu[1].text}</span>
-              </Link>
-            </li>
-            <li
-              id='2'
-              className={`text-p1-regular ${props.statusMenu003}`}
-              onClick={handleClick}
-            >
-              <Link to={dataMenu.menu[2].route}>
-                <span>{dataMenu.menu[2].text}</span>
-              </Link>
-            </li>
-            <li
-              id='3'
-              className={`text-p1-regular ${props.statusMenu004}`}
-              onClick={handleClick}
-            >
-              <Link to={dataMenu.menu[3].route}>
-                <span>{dataMenu.menu[3].text}</span>
-              </Link>
-            </li>
+            {dataMenu.menu.map((item) => (
+              <li
+                key={item.route}
+                className={`text-p1-regular ${statusMenu(item.route)}`}
+                onClick={changeVisibilityNav}
+              >
+                <Link to={item.route}>
+                  <span>{item.text}</span>
+                </Link>
+              </li>
+            ))}
           </ul>
+
+          {/* Escritorio: botón que abre el desplegable de descargas */}
           <BtnResults
-            funShowModal={props.funShowModal}
-            modalVisible={props.modalVisible}
-            setModalVisible={props.setModalVisible}
+            modalVisible={modalVisible}
+            funShowModal={funShowModal}
+            funHideModal={funHideModal}
+          />
+
+          {/* Tablet y móvil: los dos botones de descarga a primer nivel */}
+          <BtnDownloads
+            variant='menu'
+            className='nav__downloads'
+            onClick={changeVisibilityNav}
           />
         </nav>
       </div>

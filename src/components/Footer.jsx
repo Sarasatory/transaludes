@@ -14,6 +14,7 @@ const Footer = () => {
             <a
               href='https://www.facebook.com/transaludes'
               target='_blank'
+              rel='noopener noreferrer'
               title='Facebook de Transaludes'
             >
               <div className='footer-icon footer__row001__rrss--fb'></div>
@@ -21,6 +22,7 @@ const Footer = () => {
             <a
               href='https://www.instagram.com/transaludes/'
               target='_blank'
+              rel='noopener noreferrer'
               title='Instagram de Transaludes'
             >
               <div className='footer-icon footer__row001__rrss--ig'></div>
@@ -28,6 +30,7 @@ const Footer = () => {
             <a
               href='https://twitter.com/transaludes'
               target='_blank'
+              rel='noopener noreferrer'
               title='Twitter de Transaludes'
             >
               <div className='footer-icon footer__row001__rrss--tw'></div>
@@ -41,9 +44,9 @@ const Footer = () => {
           {dataLogosFooter.logos.map((item) => (
             <a
               href={item.url}
-              key='index'
+              key={item.id}
               target='_blank'
-              rel='noreferrer'
+              rel='noopener noreferrer'
             >
               <div className={`image-service${item.id}`}></div>
             </a>
@@ -78,7 +81,7 @@ const Footer = () => {
       <div className='footer__row003'>
         <div className='max-container'>
           <div className='footer__row004--item001 text-p3'>
-            © Transaludes 2023.
+            © Transaludes {new Date().getFullYear()}.
           </div>
         </div>
       </div>
@@ -89,6 +92,7 @@ const Footer = () => {
             className='footer__row004--item002 text-p3 a-sub-queer'
             href='https://satory.es'
             target='_blank'
+            rel='noopener noreferrer'
             title='Satory Asensio - Web Developer'
           >
             <strong className='a-sub-queer-001'>Hecho con</strong>{' '}

@@ -24,10 +24,10 @@
     gap: 24rem;
 
     @media (min-width: $break-point-tablet) {
-      width: 60%;
+      width: 70%;
     }
     @media (min-width: $break-point-desktop) {
-      width: 40%;
+      width: 50%;
     }
   }
 
@@ -357,6 +357,47 @@
 
       width: 130rem;
       height: 130rem;
+    }
+  }
+}
+
+.p0s6__downloads {
+  margin: 16rem 0 24rem 0;
+  justify-content: center;
+}
+
+// Fase 2: los botones de descarga alargan el bloque central. En móvil y tablet
+// se baja el grupo inferior (logo + avatares 006-009) y se amplía el fondo de
+// la sección en la misma medida para que nada tape los botones.
+$p0s6-shift-mobile: 190rem;
+$p0s6-shift-tablet: 110rem;
+
+.p0s6 {
+  .max-container {
+    padding-bottom: calc(260rem + #{$p0s6-shift-mobile});
+
+    @media (min-width: $break-point-tablet) {
+      padding-bottom: calc(260rem + #{$p0s6-shift-tablet});
+    }
+
+    @media (min-width: $break-point-desktop) {
+      padding-bottom: 390rem;
+    }
+  }
+
+  &__bg-img--006,
+  &__bg-img--007,
+  &__bg-img--008,
+  &__bg-img--009,
+  & .logo-square {
+    transform: translateY($p0s6-shift-mobile);
+
+    @media (min-width: $break-point-tablet) {
+      transform: translateY($p0s6-shift-tablet);
+    }
+
+    @media (min-width: $break-point-desktop) {
+      transform: none;
     }
   }
 }

@@ -20,7 +20,7 @@ const Pag1Sec004 = () => {
         <div className='p1s4__logos'>
           {dataLogosCollaborators.collaborators.map((item) => (
             <a
-              key='index'
+              key={item.id}
               target='_blank'
               rel='noreferrer'
             >

@@ -10,7 +10,7 @@ const Pag0Sec005 = () => {
             <h2 className='text-h2'>Impacto esperado</h2>
             <p className='text-p2'>
               Contar con estos datos de la comunidad trans y/o no binaria
-              permitirá:
+              permite:
             </p>
             <ul>
               <li className='list-li text-p2'>

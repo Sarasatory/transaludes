@@ -13,26 +13,17 @@ import Cookies from './components/Cookies';
 import Footer from './components/Footer';
 
 import {Route, Routes, useLocation} from 'react-router-dom';
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useCallback} from 'react';
 
 const App = () => {
-  //
-  // CONSTANTES DE ESTADO
-  //
+  // Menú tablet/móvil: el icono de barras se oculta ('d-hidden') al abrir el menú.
   const [visibility, setVisibility] = useState('');
   const [visibilityNav, setVisibilityNav] = useState('closed');
 
-  const [statusMenu001, setStatusMenu001] = useState('');
-  const [statusMenu002, setStatusMenu002] = useState('');
-  const [statusMenu003, setStatusMenu003] = useState('');
-  const [statusMenu004, setStatusMenu004] = useState('');
-
+  // Desplegable de descargas (escritorio).
   const [modalVisible, setModalVisible] = useState('');
 
-  //
-  // FUNCIONES GENERALES
-  //
-  /// Scroll to top
+  // Scroll arriba al cambiar de página.
   const {pathname} = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -48,39 +39,23 @@ const App = () => {
     setVisibilityNav('closed');
   };
 
-  const funShowModal = () => {
-    setModalVisible('modal-visible');
-  };
-
-  const funHideModal = () => {
-    setModalVisible('');
-  };
+  const funShowModal = () => setModalVisible('modal-visible');
+  const funHideModal = useCallback(() => setModalVisible(''), []);
 
   return (
     <>
       <Nav
         visibility={visibility}
         visibilityNav={visibilityNav}
-        setVisibility={setVisibility}
-        setVisibilityNav={setVisibilityNav}
-        modalVisible={modalVisible}
-        setModalVisible={setModalVisible}
         changeVisibilityBtn={changeVisibilityBtn}
         changeVisibilityNav={changeVisibilityNav}
+        modalVisible={modalVisible}
         funShowModal={funShowModal}
-        statusMenu001={statusMenu001}
-        statusMenu002={statusMenu002}
-        statusMenu003={statusMenu003}
-        statusMenu004={statusMenu004}
-        setStatusMenu001={setStatusMenu001}
-        setStatusMenu002={setStatusMenu002}
-        setStatusMenu003={setStatusMenu003}
-        setStatusMenu004={setStatusMenu004}
+        funHideModal={funHideModal}
       />
 
       <ModalBtn
         modalVisible={modalVisible}
-        setModalVisible={setModalVisible}
         funHideModal={funHideModal}
       />
 
@@ -102,10 +77,6 @@ const App = () => {
           element={<Page3 />}
         />
         <Route
-          path='*'
-          element={<Page404 />}
-        />
-        <Route
           path='/Legal'
           element={<Legal />}
         />
@@ -116,6 +87,10 @@ const App = () => {
         <Route
           path='/Cookies'
           element={<Cookies />}
+        />
+        <Route
+          path='*'
+          element={<Page404 />}
         />
       </Routes>
 

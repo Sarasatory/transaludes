@@ -1,16 +1,19 @@
 import '../styles/components/Pag0Sec006.scss';
 import LogoSquare from './LogoSquare';
+import BtnDownloads from './BtnDownloads';
 
 const Pag0Sec006 = () => {
   return (
     <section className='p0s6'>
       <div className='max-container'>
         <div className='p0s6__little-container'>
-          <h2 className='text-h2 ta-center'>¡Gracias por participar!</h2>
+          <h2 className='text-h2 ta-center'>Gracias por ser parte de esto</h2>
           <h4 className='text-h4-regular ta-center'>
-            Gracias a todas las personas que han colaborado para construir
-            juntes nuestro discurso en salud.
+            Gracias a todas las personas que participaron, hemos podido
+            construir un discurso en salud más representativo y basado en
+            vivencias reales.
           </h4>
+          <BtnDownloads className='p0s6__downloads' />
           <LogoSquare />
         </div>
         <span className='p0s6__bg-img p0s6__bg-img--001'></span>

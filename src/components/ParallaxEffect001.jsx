@@ -50,25 +50,15 @@ const ParallaxEffect001 = () => {
       });
     };
 
-    if (parallaxContainer.current) {
-      parallaxContainer.current.addEventListener('mousemove', handleMouseMove);
-      parallaxContainer.current.addEventListener(
-        'mouseleave',
-        handleMouseLeave
-      );
-    }
+    const container = parallaxContainer.current;
+    if (!container) return undefined;
+
+    container.addEventListener('mousemove', handleMouseMove);
+    container.addEventListener('mouseleave', handleMouseLeave);
 
     return () => {
-      if (parallaxContainer.current) {
-        parallaxContainer.current.removeEventListener(
-          'mousemove',
-          handleMouseMove
-        );
-        parallaxContainer.current.removeEventListener(
-          'mouseleave',
-          handleMouseLeave
-        );
-      }
+      container.removeEventListener('mousemove', handleMouseMove);
+      container.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, []);
 

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import '../styles/components/P2S1Card.scss';
 import BtnFaq from './BtnFaq';
 

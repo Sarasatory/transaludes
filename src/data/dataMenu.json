@@ -15,15 +15,23 @@
     {
       "text": "Contacto",
       "route": "/Page3"
+    }
+  ],
+  "downloadsBtn": "Descargar resultados",
+  "downloads": [
+    {
+      "id": "informe",
+      "menuText": "Descargar informe completo",
+      "btnText": "Informe completo",
+      "file": "Informe-Transaludes-2024.pdf",
+      "downloadName": "Informe Transaludes 2024.pdf"
     },
     {
-      "text": "Descargar resultados"
-    },
-    {
-      "text": "Descargar informe completo"
-    },
-    {
-      "text": "Descargar resumen ejecutivo"
+      "id": "resumen",
+      "menuText": "Descargar resumen ejecutivo",
+      "btnText": "Resumen ejecutivo",
+      "file": "Resumen-ejecutivo-Transaludes.pdf",
+      "downloadName": "Resumen ejecutivo Transaludes.pdf"
     }
   ]
 }

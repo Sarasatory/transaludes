@@ -63,6 +63,7 @@
   height: 100vh;
   max-height: 100vh;
   padding: 24rem;
+  overflow-y: auto; // menú tablet/móvil: que se pueda desplazar en pantallas bajas
 
   display: flex;
   flex-direction: column;
@@ -125,7 +126,7 @@
 
   &__menu {
     width: 100%;
-    margin-bottom: 80rem;
+    margin-bottom: 40rem;
 
     display: flex;
     flex-direction: column;
@@ -189,5 +190,18 @@
     @media (min-width: $break-point-desktop) {
       padding: 18rem 5rem;
     }
+  }
+}
+
+// Botones de descarga dentro del menú desplegado (solo tablet y móvil).
+// Selector doble para ganar a .btn-downloads, que se carga después.
+.nav .nav__downloads {
+  @media only screen and (max-width: 1000px) and (orientation: landscape) {
+    flex-direction: row;
+    width: auto;
+  }
+
+  @media (min-width: $break-point-desktop) {
+    display: none;
   }
 }

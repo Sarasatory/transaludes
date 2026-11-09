@@ -1,20 +1,21 @@
 import '../styles/components/BtnResults.scss';
 import dataMenu from '../data/dataMenu.json';
 
-const BtnResults = (props) => {
-  const handleClick = () => {
-    props.funShowModal(props.modalVisible);
-  };
+// Botón "Descargar resultados" del menú de escritorio: abre/cierra el desplegable (ModalBtn).
+const BtnResults = ({modalVisible, funShowModal, funHideModal}) => {
+  const isOpen = modalVisible === 'modal-visible';
 
   return (
-    <>
-      <span
-        className='btn-results text-btn'
-        onClick={handleClick}
-      >
-        {dataMenu.menu[4].text}
-      </span>
-    </>
+    <button
+      type='button'
+      className='btn-results text-btn'
+      aria-haspopup='true'
+      aria-expanded={isOpen}
+      aria-controls='downloads-menu'
+      onClick={isOpen ? funHideModal : funShowModal}
+    >
+      {dataMenu.downloadsBtn}
+    </button>
   );
 };
 

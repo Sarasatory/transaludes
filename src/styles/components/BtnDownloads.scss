@@ -1,0 +1,61 @@
+@import '../core/Variables.scss';
+
+.btn-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16rem 30rem;
+
+  &--menu {
+    width: min(400rem, 100%);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 24rem;
+
+    .btn-download {
+      width: 100%;
+    }
+  }
+}
+
+// Selectores dobles (.btn-download.btn-download--x) para ganar a .text-btn
+// (color blanco), que se carga después con la misma especificidad.
+.btn-download {
+  min-width: 250rem;
+  height: 56rem;
+  padding: 0 32rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 28rem;
+  text-align: center;
+
+  transition: all 0.35s ease, background 0.35s ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &#{&}--primary {
+    color: $col-white;
+    background: $gradient-action-pink;
+
+    &:hover {
+      background: $gradient-action-pink-hover;
+    }
+  }
+
+  &#{&}--secondary {
+    color: $col-action-pink;
+    background: $col-white;
+    border: 2rem solid $col-action-pink;
+
+    &:hover {
+      color: $col-white;
+      background: $gradient-action-pink-hover;
+      border-color: transparent;
+    }
+  }
+}

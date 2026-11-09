@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import '../styles/components/P0S4Card.scss';
 
 const P0S4Card = (props) => {

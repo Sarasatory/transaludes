@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import '../styles/components/P1S3Card.scss';
 
 const P1S3Card = (props) => {

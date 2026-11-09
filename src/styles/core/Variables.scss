@@ -30,6 +30,7 @@ $col-main-pink: #ea579b;
 $col-main-pink-soft: rgba(234, 87, 155, 0.5);
 $col-main-purple: #825da3;
 $col-main-yellow: #fdcd4c;
+$col-action-pink: #e20069;
 
 $col--neutrals-soft-gray: rgb(222, 226, 229);
 $col--neutrals-soft-gray-20: rgba(222, 226, 229, 0.2);
@@ -77,12 +78,6 @@ $gradient-action-blue-hover: linear-gradient(
   144deg,
   #3864ff 0%,
   #271884 68.23%
-);
-$gradient-action-disabled: linear-gradient(144deg, #e0e0e0 0%, #bdbdbd 68.23%);
-$gradient-action-disabled-hover: linear-gradient(
-  144deg,
-  #c7c7c7 0%,
-  #a3a3a3 68.23%
 );
 
 $gradient-lgtbiqa: linear-gradient(

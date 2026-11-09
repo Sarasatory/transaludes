@@ -11,15 +11,14 @@ const Pag0Sec003 = () => {
             <p className='text-p2'>
               Transaludes es un estudio de un Organismo Público de Investigación
               dirigido a conocer el estado de salud de las personas trans y/o no
-              binarias en España.
+              binarias en España que busca:
             </p>
             <ul>
               <li className='list-li text-p2'>
-                Permitirá identificar las necesidades de salud de nuestra
-                comunidad.
+                Identificar las necesidades de salud de nuestra comunidad.
               </li>
               <li className='list-li text-p2'>
-                Propondrá mejoras en la atención de los servicios socio
+                Proponer mejoras en la atención de los servicios socio
                 sanitarios.
               </li>
             </ul>
