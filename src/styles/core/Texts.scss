@@ -89,11 +89,15 @@
 
   &--404 {
     font-size: 140rem;
+
     @media (min-width: $break_point_tablet) {
       font-size: 180rem;
     }
     @media (min-width: $break_point_desktop) {
       font-size: 300rem;
+    }
+    @media only screen and (max-width: 1000px) and (orientation: landscape) {
+      font-size: 80rem;
     }
   }
   @media (min-width: $break_point_tablet) {

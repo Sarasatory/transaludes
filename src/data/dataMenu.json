@@ -15,6 +15,15 @@
     {
       "text": "Contacto",
       "route": "/Page3"
+    },
+    {
+      "text": "Descargar resultados"
+    },
+    {
+      "text": "Descargar informe completo"
+    },
+    {
+      "text": "Descargar resumen ejecutivo"
     }
   ]
 }

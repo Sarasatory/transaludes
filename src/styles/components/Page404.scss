@@ -71,14 +71,24 @@
 
 .rotate0 {
   width: 100%;
+  padding: 0 32rem;
   position: absolute;
   top: -100rem;
+
+  @media only screen and (max-width: 1000px) and (orientation: landscape) {
+    display: none;
+  }
 }
 
 .rotate180 {
   width: 100%;
+  padding: 0 32rem;
   position: absolute;
   bottom: -100rem;
 
   transform: rotate(180deg);
+
+  @media only screen and (max-width: 1000px) and (orientation: landscape) {
+    display: none;
+  }
 }

@@ -2,96 +2,131 @@
   "collaborators": [
     {
       "id": "0",
-      "img": "src/assets/logos/collaborators/alas.png",
+      "img": "src/assets/logos/collaborators/accion_tirangulo.png",
       "height": "100"
     },
     {
       "id": "1",
-      "img": "src/assets/logos/collaborators/apoyo_positivo.png",
+      "img": "src/assets/logos/collaborators/alas.png",
       "height": "100"
     },
     {
       "id": "2",
-      "img": "src/assets/logos/collaborators/atc.png",
+      "img": "src/assets/logos/collaborators/apoyo_positivo.png",
       "height": "100"
     },
     {
       "id": "3",
-      "img": "src/assets/logos/collaborators/balears_diversa.png",
+      "img": "src/assets/logos/collaborators/atc.png",
       "height": "100"
     },
     {
       "id": "4",
-      "img": "src/assets/logos/collaborators/cesida.png",
+      "img": "src/assets/logos/collaborators/balears_diversa.png",
       "height": "100"
     },
     {
       "id": "5",
-      "img": "src/assets/logos/collaborators/chrysallis.png",
+      "img": "src/assets/logos/collaborators/cesida.png",
       "height": "100"
     },
     {
       "id": "6",
-      "img": "src/assets/logos/collaborators/cogam.png",
+      "img": "src/assets/logos/collaborators/chrysallis.png",
       "height": "100"
     },
     {
       "id": "7",
-      "img": "src/assets/logos/collaborators/dekumas_lbt.png",
+      "img": "src/assets/logos/collaborators/cogam.png",
       "height": "100"
     },
     {
       "id": "8",
-      "img": "src/assets/logos/collaborators/despertrans.png",
+      "img": "src/assets/logos/collaborators/dekumas_lbt.png",
       "height": "100"
     },
     {
       "id": "9",
-      "img": "src/assets/logos/collaborators/espacio_alere.png",
+      "img": "src/assets/logos/collaborators/despertrans.png",
       "height": "100"
     },
     {
       "id": "10",
-      "img": "src/assets/logos/collaborators/euforia.png",
+      "img": "src/assets/logos/collaborators/espacio_alere.png",
       "height": "100"
     },
     {
       "id": "11",
-      "img": "src/assets/logos/collaborators/fundacion_26dic.png",
+      "img": "src/assets/logos/collaborators/euforia.png",
       "height": "100"
     },
     {
       "id": "12",
-      "img": "src/assets/logos/collaborators/iguales.png",
+      "img": "src/assets/logos/collaborators/felgtbi.png",
       "height": "100"
     },
     {
       "id": "13",
-      "img": "src/assets/logos/collaborators/loratuz_lotu.png",
+      "img": "src/assets/logos/collaborators/fundacion_26dic.png",
       "height": "100"
     },
     {
       "id": "14",
-      "img": "src/assets/logos/collaborators/no_binaries_espana.png",
+      "img": "src/assets/logos/collaborators/gama.png",
       "height": "100"
     },
     {
       "id": "15",
-      "img": "src/assets/logos/collaborators/plural.png",
+      "img": "src/assets/logos/collaborators/gidseen.png",
       "height": "100"
     },
     {
       "id": "16",
-      "img": "src/assets/logos/collaborators/transboys.png",
+      "img": "src/assets/logos/collaborators/iguales.png",
       "height": "100"
     },
     {
       "id": "17",
-      "img": "src/assets/logos/collaborators/transwomen_canarias.png",
+      "img": "src/assets/logos/collaborators/loratuz_lotu.png",
       "height": "100"
     },
     {
       "id": "18",
+      "img": "src/assets/logos/collaborators/no_binaries_espana.png",
+      "height": "100"
+    },
+    {
+      "id": "19",
+      "img": "src/assets/logos/collaborators/plural.png",
+      "height": "100"
+    },
+    {
+      "id": "20",
+      "img": "src/assets/logos/collaborators/stop.png",
+      "height": "100"
+    },
+    {
+      "id": "21",
+      "img": "src/assets/logos/collaborators/transboys.png",
+      "height": "100"
+    },
+    {
+      "id": "22",
+      "img": "src/assets/logos/collaborators/transit.png",
+      "height": "100"
+    },
+    {
+      "id": "23",
+      "img": "src/assets/logos/collaborators/transwomen_canarias.png",
+      "height": "100"
+    },
+    {
+      "id": "24",
+      "img": "src/assets/logos/collaborators/triangulo.png",
+      "height": "100"
+    },
+    {
+      "id": "25",
       "img": "src/assets/logos/collaborators/xega_astur.png",
       "height": "100"
     }

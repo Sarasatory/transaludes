@@ -45,17 +45,25 @@
         &--fb {
           background: url(../../assets/icons/rrss/fb.svg) no-repeat center
             center / contain;
+          &:hover {
+            background: url(../../assets/icons/rrss/fbHover.svg) no-repeat
+              center center / contain;
+          }
         }
         &--ig {
           background: url(../../assets/icons/rrss/ig.svg) no-repeat center
             center / contain;
+          &:hover {
+            background: url(../../assets/icons/rrss/igHover.svg) no-repeat
+              center center / contain;
+          }
         }
         &--tw {
           background: url(../../assets/icons/rrss/tw-machi.svg) no-repeat center
             center / contain;
           &:hover {
-            background: url(../../assets/icons/rrss/tw.svg) no-repeat center
-              center / contain;
+            background: url(../../assets/icons/rrss/twHover.svg) no-repeat
+              center center / contain;
           }
         }
       }

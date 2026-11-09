@@ -2,10 +2,11 @@
 @import '../core/Global.scss';
 
 .lpc {
+  position: relative;
   width: 100%;
-  min-height: calc(100vh - 487rem);
+  min-height: calc(80vh - $nav-height-mobile);
   margin-top: $nav-height-mobile;
-  padding: 40rem 32rem;
+  padding: 40rem 32rem 0 32rem;
 
   @include flexCenteredColum;
 
@@ -16,6 +17,7 @@
   .max-container {
     gap: 20rem;
     width: 100%;
+    min-height: calc(60vh - $nav-height-mobile);
     padding: 0 16rem 40rem 16rem;
 
     & p {
@@ -26,6 +28,7 @@
       padding: 40rem;
     }
   }
+
   &__text-container {
     width: 100%;
 
@@ -34,5 +37,31 @@
     gap: 20rem;
     &__text-container--line {
     }
+  }
+}
+
+.cookies-img {
+  position: absolute;
+  top: calc(60vh - $nav-height-mobile);
+  width: 100%;
+  height: 150rem;
+
+  background: url(../../assets/images/coockies.svg) no-repeat 70% bottom /
+    contain;
+
+  @media (min-width: $break-point-tablet) {
+    height: 180rem;
+  }
+
+  @media (min-width: $break-point-desktop) {
+    top: calc(53vh - $nav-height-mobile);
+    height: 300rem;
+  }
+
+  @media only screen and (max-width: 1000px) and (orientation: landscape) {
+    background: url(../../assets/images/coockies.svg) no-repeat 80% bottom /
+      contain;
+    top: calc(95vh - $nav-height-mobile);
+    height: 100rem;
   }
 }

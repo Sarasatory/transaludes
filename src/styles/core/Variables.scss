@@ -65,17 +65,24 @@ $gradient-logo-yellow: radial-gradient(
   #f9eed1 100%
 );
 
-$gradient-action-blue: linear-gradient(144deg, #2ba3d9 0%, #3864ff 68.23%);
+$gradient-action-pink: linear-gradient(144deg, #ed099f 0%, #e20069 68.23%);
 $gradient-action-pink-hover: linear-gradient(
   144deg,
   #e20069 0%,
   #8b119f 68.23%
 );
-$gradient-action-pink: linear-gradient(144deg, #ed099f 0%, #e20069 68.23%);
+
+$gradient-action-blue: linear-gradient(144deg, #2ba3d9 0%, #3864ff 68.23%);
 $gradient-action-blue-hover: linear-gradient(
   144deg,
   #3864ff 0%,
   #271884 68.23%
+);
+$gradient-action-disabled: linear-gradient(144deg, #e0e0e0 0%, #bdbdbd 68.23%);
+$gradient-action-disabled-hover: linear-gradient(
+  144deg,
+  #c7c7c7 0%,
+  #a3a3a3 68.23%
 );
 
 $gradient-lgtbiqa: linear-gradient(

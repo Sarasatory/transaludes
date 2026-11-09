@@ -1,5 +1,4 @@
 import '../styles/components/Pag0Sec006.scss';
-import BtnSurvey from './BtnSurvey';
 import LogoSquare from './LogoSquare';
 
 const Pag0Sec006 = () => {
@@ -7,14 +6,11 @@ const Pag0Sec006 = () => {
     <section className='p0s6'>
       <div className='max-container'>
         <div className='p0s6__little-container'>
-          <h2 className='text-h2 ta-center'>
-            Tu experiencia puede ayudar a muchas personas
-          </h2>
+          <h2 className='text-h2 ta-center'>¡Gracias por participar!</h2>
           <h4 className='text-h4-regular ta-center'>
-            Únete a las personas que ya están participando para construir juntes
-            nuestro discurso en salud.
+            Gracias a todas las personas que han colaborado para construir
+            juntes nuestro discurso en salud.
           </h4>
-          <BtnSurvey />
           <LogoSquare />
         </div>
         <span className='p0s6__bg-img p0s6__bg-img--001'></span>

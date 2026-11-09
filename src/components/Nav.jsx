@@ -1,7 +1,7 @@
 import '../styles/components/Nav.scss';
 
 import LogoRectangle from './LogoRectangle';
-import BtnSurvey from './BtnSurvey';
+import BtnResults from './BtnResults';
 
 import {Link, useLocation} from 'react-router-dom';
 import {useEffect} from 'react';
@@ -119,7 +119,11 @@ const Nav = (props) => {
               </Link>
             </li>
           </ul>
-          <BtnSurvey />
+          <BtnResults
+            funShowModal={props.funShowModal}
+            modalVisible={props.modalVisible}
+            setModalVisible={props.setModalVisible}
+          />
         </nav>
       </div>
     </section>

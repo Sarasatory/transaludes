@@ -1,6 +1,7 @@
 import './styles/components/App.scss';
 
 import Nav from './components/Nav';
+import ModalBtn from './components/ModalBtn';
 import Page0 from './components/Page0';
 import Page1 from './components/Page1';
 import Page2 from './components/Page2';
@@ -26,6 +27,8 @@ const App = () => {
   const [statusMenu003, setStatusMenu003] = useState('');
   const [statusMenu004, setStatusMenu004] = useState('');
 
+  const [modalVisible, setModalVisible] = useState('');
+
   //
   // FUNCIONES GENERALES
   //
@@ -45,6 +48,14 @@ const App = () => {
     setVisibilityNav('closed');
   };
 
+  const funShowModal = () => {
+    setModalVisible('modal-visible');
+  };
+
+  const funHideModal = () => {
+    setModalVisible('');
+  };
+
   return (
     <>
       <Nav
@@ -52,8 +63,11 @@ const App = () => {
         visibilityNav={visibilityNav}
         setVisibility={setVisibility}
         setVisibilityNav={setVisibilityNav}
+        modalVisible={modalVisible}
+        setModalVisible={setModalVisible}
         changeVisibilityBtn={changeVisibilityBtn}
         changeVisibilityNav={changeVisibilityNav}
+        funShowModal={funShowModal}
         statusMenu001={statusMenu001}
         statusMenu002={statusMenu002}
         statusMenu003={statusMenu003}
@@ -62,6 +76,12 @@ const App = () => {
         setStatusMenu002={setStatusMenu002}
         setStatusMenu003={setStatusMenu003}
         setStatusMenu004={setStatusMenu004}
+      />
+
+      <ModalBtn
+        modalVisible={modalVisible}
+        setModalVisible={setModalVisible}
+        funHideModal={funHideModal}
       />
 
       <Routes>
