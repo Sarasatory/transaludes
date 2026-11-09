@@ -9,8 +9,10 @@ const Pag2Sec001 = () => {
         <div className='p2s1__little-container'>
           <h1 className='text-h1 ta-center'>Preguntas frecuentes</h1>
           <p className='text-p1-regular ta-center'>
+            {/* &nbsp; entre las 3 últimas palabras: si hay salto de línea al
+                final, bajan juntas y nunca queda "III." suelto. */}
             Transaludes es un proyecto liderado por un equipo de investigadores
-            del Instituto de Salud Carlos III.
+            del Instituto de Salud&nbsp;Carlos&nbsp;III.
           </p>
         </div>
         <div className='p2s1__cards'>

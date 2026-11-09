@@ -7,8 +7,10 @@ const Pag1Sec001 = () => {
         <div className='p1s1__little-container'>
           <h1 className='text-h1 ta-center'>Quiénes somos</h1>
           <p className='text-p1-regular ta-center'>
+            {/* &nbsp; entre las 3 últimas palabras: si hay salto de línea al
+                final, bajan juntas y nunca queda "III." suelto. */}
             Transaludes es un proyecto liderado por un equipo de investigadores
-            del Instituto de Salud Carlos III.
+            del Instituto de Salud&nbsp;Carlos&nbsp;III.
           </p>
           <p className='text-p2 ta-center white-space-jump'>
             Se trata de un equipo de trabajo multidisciplinar, pionero y
